@@ -1,11 +1,114 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import HeaderOrganism from '../components/organisms/HeaderOrganism';
+import HeroOrganism from '../components/organisms/HeroOrganism';
+import PainPointsOrganism from '../components/organisms/PainPointsOrganism';
+import BenefitsOrganism from '../components/organisms/BenefitsOrganism';
+import ServicesPricingOrganism from '../components/organisms/ServicesPricingOrganism';
+import TestimonialsOrganism from '../components/organisms/TestimonialsOrganism';
+import LocationMapsOrganism from '../components/organisms/LocationMapsOrganism';
+import AboutOrganism from '../components/organisms/AboutOrganism';
+import FAQOrganism from '../components/organisms/FAQOrganism';
+import FooterOrganism from '../components/organisms/FooterOrganism';
+import WhatsAppIcon from '../components/atoms/WhatsAppIcon';
+import WhatsAppModalOrganism from '../components/organisms/WhatsAppModalOrganism';
+import companyData from '../data/infos.json';
+import FloatingWhatsAppButton from '../components/molecules/FloatingWhatsAppButton';
+const { 
+  whatsappLink, 
+  units, 
+  differentials,
+  services, 
+  testimonials,
+  metrics,
+  faqs,
+  benefits,
+  about,
+  company,
+  painPoints,
+  socialProof,
+  cta,
+  contact,
+  servicesTitle,
+  servicesSubtitle,
+  testimonialsTitle,
+  testimonialsSubtitle,
+  faqTitle,
+  faqSubtitle,
+  benefitsTitle,
+  benefitsSubtitle
+} = {
+  whatsappLink: companyData.contact.whatsapp + '?text=' + encodeURIComponent(companyData.contact.whatsappMessage),
+  units: companyData.units,
+  differentials: companyData.differentials,
+  services: companyData.services.items,
+  testimonials: companyData.testimonials.items,
+  metrics: companyData.metrics.items,
+  faqs: companyData.faq.items,
+  benefits: companyData.benefits.items,
+  about: companyData.about,
+  company: companyData.company,
+  contact: companyData.contact,
+  painPoints: companyData.painPoints,
+  socialProof: companyData.socialProof,
+  cta: companyData.cta,
+  servicesTitle: companyData.services.title,
+  servicesSubtitle: companyData.services.subtitle,
+  testimonialsTitle: companyData.testimonials.title,
+  testimonialsSubtitle: companyData.testimonials.subtitle,
+  faqTitle: companyData.faq.title,
+  faqSubtitle: companyData.faq.subtitle,
+  benefitsTitle: companyData.benefits.title,
+  benefitsSubtitle: companyData.benefits.subtitle
+};
 ---
 
-<Layout>
-	<Welcome />
+<Layout title={`${companyData.company.name} | ${companyData.company.tagline}`}>
+  <HeaderOrganism client:load whatsappLink={whatsappLink} units={units} />
+  
+  <main>
+    <HeroOrganism 
+      client:load
+      whatsappLink={whatsappLink} 
+      units={units}
+      differentials={differentials} 
+      company={company}
+      cta={cta}
+      socialProof={socialProof}
+    />
+    <PainPointsOrganism client:load painPoints={painPoints} units={units} />
+    <BenefitsOrganism benefits={benefits} benefitsTitle={benefitsTitle} benefitsSubtitle={benefitsSubtitle} />
+    <ServicesPricingOrganism 
+      client:load
+      whatsappLink={whatsappLink} 
+      units={units}
+      services={services}
+      servicesTitle={servicesTitle}
+      servicesSubtitle={servicesSubtitle}
+      specialties={companyData.services.specialties}
+    />
+    <TestimonialsOrganism 
+      testimonials={testimonials} 
+      metrics={metrics}
+      testimonialsTitle={testimonialsTitle}
+      testimonialsSubtitle={testimonialsSubtitle}
+      rating={companyData.testimonials.rating}
+      totalReviews={companyData.testimonials.totalReviews}
+      googleReviewsUrl={companyData.testimonials.googleReviewsUrl}
+    />
+    <LocationMapsOrganism client:load units={units} />
+    <AboutOrganism about={about} company={company} units={units} />
+    <FAQOrganism 
+      client:load
+      faqs={faqs}
+      faqTitle={faqTitle}
+      faqSubtitle={faqSubtitle}
+    />
+  </main>
+
+  <FooterOrganism client:load whatsappLink={whatsappLink} units={units} company={company} contact={contact} />
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+<FloatingWhatsAppButton client:load units={units} /> 
 </Layout>
+

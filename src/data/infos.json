@@ -1,0 +1,245 @@
+{
+  "company": {
+    "name": "Jeferson Autocenter",
+    "shortName": "Jeferson",
+    "badge": "Oficina Mecânica em Campo Grande - MS • 2 Unidades",
+    "tagline": "Oficina Mecânica de Confiança em Campo Grande",
+    "description": "Sua oficina mecânica de confiança em Campo Grande - MS. Manutenção preventiva e corretiva com garantia e agilidade.",
+    "fullDescription": "Com anos de história no setor automotivo em Campo Grande, o Jeferson Autocenter nasceu da paixão por mecânica e do compromisso em oferecer um atendimento verdadeiramente honesto aos motoristas sul-mato-grossenses.",
+    "experienceYears": "15",
+    "cnpj": "",
+    "city": "Campo Grande - MS",
+    "rating": {
+      "score": "4.7/5",
+      "reviewsCount": "162",
+      "platform": "Google"
+    }
+  },
+  "contact": {
+    "phone": "(67) 3222-6559 | (67) 3253-4135",
+    "phonePrimary": "(67) 3222-6559",
+    "phoneSecondary": "(67) 3253-4135",
+    "whatsapp": "https://wa.me/556732226559",
+    "whatsappMessage": "Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20para%20o%20meu%20carro.",
+    "email": ""
+  },
+  "branding": {
+    "primaryColor": "#ffcc00",
+    "secondaryColor": "#001f5c",
+    "backgroundColor": "#002d80",
+    "darkBackground": "#001744",
+    "lightBlue": "#002266"
+  },
+  "units": [
+        {
+      "name": "Salgado Filho (Loja 1)",
+      "shortName": "Salgado Filho",
+      "badge": "Unidade 1",
+      "address": "Av. Salgado Filho, 2057 - Vila Carvalho, Campo Grande - MS",
+      "phone": "(67) 3025-4562 | (67) 3025-5362",
+      "mapsUrl": "https://maps.google.com/?q=Av.+Salgado+Filho,+2057+-+Vila+Carvalho,+Campo+Grande+-+MS",
+      "embedUrl": "https://www.google.com/maps?q=Av.+Salgado+Filho,+2057+-+Vila+Carvalho,+Campo+Grande+-+MS&output=embed",
+      "whatsapp": "https://wa.me/5567992479213?text=Olá!%20Gostaria%20de%20atendimento%20na%20unidade%20Salgado%20Filho."
+    },
+    {
+      "name": "Júlio de Castilho (Loja 2)",
+      "shortName": "Júlio de Castilho",
+      "badge": "Unidade 2",
+      "address": "Av. Júlio de Castilho, 1636 - Vila Alba, Campo Grande - MS",
+      "phone": "(67) 3222-6559 | (67) 3253-4135",
+      "mapsUrl": "https://maps.google.com/?q=Av.+J%C3%BAlio+de+Castilho,+1636+-+Vila+Alba,+Campo+Grande+-+MS",
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.892015525531!2d-54.63688122393278!3d-20.469539381043306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8bf8327d42d%3A0xb3df6e3f56e09c2d!2sAv.%20J%C3%BAlio%20de%20Castilho%2C%201636%20-%20Vila%20Alba%2C%20Campo%20Grande%20-%20MS!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr",
+      "whatsapp": "https://wa.me/556732226559?text=Olá!%20Gostaria%20de%20atendimento%20na%20unidade%20Júlio%20de%20Castilho."
+    }
+  ],
+  "cta": {
+    "primary": "Solicitar Orçamento Grátis",
+    "secondary": "Falar no WhatsApp",
+    "schedule": "Agendar Agora",
+    "quote": "Solicitar Orçamento"
+  },
+  "differentials": {
+    "title": "Por que escolher a Jeferson Autocenter?",
+    "items": [
+      "Sem surpresas no valor: Aprovação prévia antes de qualquer manutenção.",
+      "2 Unidades Próprias: Av. Júlio de Castilho e Av. Salgado Filho.",
+      "Equipamentos Computadorizados: Scanner avançado para injeção e motor."
+    ]
+  },
+  "benefits": {
+    "title": "Por Que Somos Referência em Campo Grande?",
+    "subtitle": "Duas unidades equipadas em Campo Grande para cuidar da revisão, suspensão, freios e motor do seu veículo com orçamento transparente.",
+    "items": [
+      {
+        "title": "Diagnóstico Computadorizado",
+        "desc": "Leitura eletrônica completa de injeção, sensores e falhas de motor antes de trocar qualquer peça."
+      },
+      {
+        "title": "Garantia por Escrito",
+        "desc": "Todos os serviços realizados e peças substituídas têm garantia registrada na ordem de serviço."
+      },
+      {
+        "title": "Agilidade no Atendimento",
+        "desc": "Boxes equipados e processos organizados nas duas unidades para cumprir o prazo combinado."
+      },
+      {
+        "title": "Revisão Geral Preventiva",
+        "desc": "Inspeção completa de freios, suspensão, correias, arrefecimento e fluidos para você rodar seguro."
+      },
+      {
+        "title": "Equipe Especializada",
+        "desc": "Mecânicos experientes em veículos nacionais, importados e utilitários, do básico ao motor e câmbio."
+      }
+    ]
+  },
+  "painPoints": {
+    "title": "Você já passou por alguma dessas situações frustrantes?",
+    "subtitle": "Sabemos como é ruim não poder confiar no serviço da sua oficina.",
+    "solutionTitle": "No Jeferson Autocenter é Diferente!",
+    "solutionDesc": "Aqui você recebe vídeos do diagnóstico no WhatsApp, aprova cada item antes do serviço começar e conta com garantia contratual de peças e mão de obra.",
+    "items": [
+      "Cansado de orçamentos que dobram de valor na hora de pagar?",
+      "Aquele barulho chato no carro que a mecânica anterior não conseguiu resolver?",
+      "Medo de ficar na mão durante uma viagem com a sua família?",
+      "Preocupação com peças paralelas de baixa qualidade sendo instaladas no seu veículo?"
+    ]
+  },
+  "about": {
+    "subtitle": "Tradição & Respeito",
+    "title": "Quem Está Por Trás do {companyName}",
+    "values": [
+      {
+        "title": "Qualificação Técnica",
+        "desc": "Treinamento constante em novas tecnologias automotivas e híbridas."
+      },
+      {
+        "title": "Transparência Total",
+        "desc": "Aprovação prévia detalhada com fotos e vídeos das peças envolvidas."
+      },
+      {
+        "title": "Peças de Qualidade",
+        "desc": "Trabalhamos apenas com componentes homologados e das melhores marcas."
+      }
+    ]
+  },
+  "services": {
+    "title": "Serviços & Manutenção Automotiva",
+    "subtitle": "Orçamento transparente antes de qualquer execução e condições facilitadas nas duas unidades.",
+    "specialties": [
+      "Alinhamento e Balanceamento",
+      "Freios, Discos e Pastilhas",
+      "Suspensão e Amortecedores",
+      "Troca de Óleo de Câmbio Automático",
+      "Embreagem, Correias e Tensores",
+      "Sistema de Arrefecimento"
+    ],
+    "items": [
+      {
+        "title": "Troca de Óleo e Filtro",
+        "category": "Lubrificação & Motor",
+        "image": "/images/servico-oleo.jpg",
+        "price": "A partir de R$205,99",
+        "popular": false,
+        "features": [
+          "Óleo Lubrificante Homologado na Viscosidade Correta",
+          "Troca do Filtro de Óleo do Motor",
+          "Inspeção Visual de Fluidos e Vazamentos",
+          "Etiqueta de Controle + Reset do Painel"
+        ]
+      },
+      {
+        "title": "Revisão Preventiva Completa",
+        "category": "Check-up Geral & Segurança",
+        "image": "/images/servico-injecao.jpg",
+        "price": "A partir de R$ 380",
+        "popular": true,
+        "badgeText": "Mais Procurado",
+        "features": [
+          "Diagnóstico Computadorizado via Scanner",
+          "Inspeção de Freios, Discos e Pastilhas",
+          "Análise de Suspensão, Buchas e Amortecedores",
+          "Verificação de Correias, Velas e Arrefecimento",
+          "Alinhamento + Balanceamento das 4 Rodas"
+        ]
+      },
+      {
+        "title": "Injeção Eletrônica & Motor",
+        "category": "Diagnóstico & Desempenho",
+        "image": "/images/servico-revisao.jpg",
+        "price": "A partir de R$ 220",
+        "popular": false,
+        "features": [
+          "Leitura Eletrônica de Falhas e Sensores",
+          "Limpeza e Equalização de Bicos Injetores",
+          "Troca e Calibragem de Velas e Cabos",
+          "Diagnóstico de Consumo, Falhas e Cabeçote"
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Quem Experimenta, Recomenda",
+    "subtitle": "Avaliações reais de clientes atendidos nas unidades Salgado Filho e Júlio de Castilho.",
+    "googleReviewsUrl": "https://maps.google.com/?q=Jeferson+Autocenter+Av.+Salgado+Filho,+2057+Campo+Grande+MS",
+    "totalReviews": "162",
+    "rating": "4.7",
+    "items": [
+      {
+        "name": "Carlos Eduardo Silva",
+        "role": "Unidade Salgado Filho • Local Guide",
+        "date": "Há 2 meses",
+        "avatarColor": "bg-emerald-600",
+        "comment": "Levei meu Civic na loja da Salgado Filho com um barulho na suspensão dianteira que outra oficina queria condenar a caixa de direção inteira. Mostraram no elevador que eram só as bieletas e buchas da barra. Serviço honesto e preço justo."
+      },
+      {
+        "name": "Mariana Alencar",
+        "role": "Unidade Júlio de Castilho",
+        "date": "Há 3 semanas",
+        "avatarColor": "bg-purple-600",
+        "comment": "Atendimento excelente desde a recepção. Mandaram o orçamento completo pelo WhatsApp com vídeo das pastilhas e discos antes de mexer no carro. Entregaram no mesmo dia dentro do horário combinado."
+      },
+      {
+        "name": "Roberto Mendes",
+        "role": "Unidade Salgado Filho • Local Guide",
+        "date": "Há 1 mês",
+        "avatarColor": "bg-amber-600",
+        "comment": "Faço a manutenção preventiva da minha caminhonete e do carro da minha esposa no Jeferson Autocenter há anos. Oficina limpa, alinhamento 3D bem feito e equipe que explica tudo sem enrolação."
+      }
+    ]
+  },
+  "metrics": {
+    "items": [
+      { "number": "+15 Anos", "label": "De Experiência em MS" },
+      { "number": "+12.000", "label": "Veículos Atendidos" },
+      { "number": "4.7/5", "label": "Nota Média no Google" },
+      { "number": "2 Lojas", "label": "Em Pontos Estratégicos" }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tire suas dúvidas antes de agendar seu serviço.",
+    "items": [
+      {
+        "q": "Preciso agendar antes de levar meu carro?",
+        "a": "Recomendamos o agendamento prévio via WhatsApp para garantir atendimento prioritário, mas também atendemos casos de emergência diretamente nas lojas."
+      },
+      {
+        "q": "Vocês dão garantia no serviço e nas peças?",
+        "a": "Sim! Todos os serviços executados e peças trocadas possuem garantia total por escrito para sua máxima segurança."
+      },
+      {
+        "q": "Quais são as formas de pagamento aceitas?",
+        "a": "Aceitamos cartões de crédito (com parcelamento em até 10x), débito, PIX e dinheiro."
+      },
+      {
+        "q": "Como recebo o orçamento do meu veículo?",
+        "a": "Após a avaliação, enviamos o diagnóstico detalhado diretamente no seu WhatsApp, incluindo fotos e custos de peças e mão de obra para você aprovar."
+      }
+    ]
+  },
+  "socialProof": {
+    "enabled": true,
+    "text": "Diagnóstico Rápido",
+    "showRating": true
+  }
+}
