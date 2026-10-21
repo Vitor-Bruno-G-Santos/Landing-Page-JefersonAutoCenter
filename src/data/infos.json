@@ -2,7 +2,7 @@
   "company": {
     "name": "Jeferson Autocenter",
     "shortName": "Jeferson",
-    "logo": "/images/logo.webp",
+    "logo": "./images/logo.webp",
     "foundedYear": "2009",
     "badge": "Oficina mecânica em Campo Grande - MS • 2 unidades próprias",
     "tagline": "Você sabe o que o carro precisa e aprova cada item antes do serviço",
@@ -215,7 +215,7 @@
       {
         "title": "Troca de óleo e filtro",
         "category": "Lubrificação e motor",
-        "image": "/images/servico-oleo.webp",
+        "image": "./images/servico-oleo.webp",
         "pricePrefix": "A partir de",
         "priceValue": "R$ 205,99",
         "price": "A partir de R$ 205,99",
@@ -230,7 +230,7 @@
       {
         "title": "Revisão preventiva completa",
         "category": "Check-up geral e segurança",
-        "image": "/images/servico-injecao.webp",
+        "image": "./images/servico-injecao.webp",
         "pricePrefix": "A partir de",
         "priceValue": "R$ 380,00",
         "price": "A partir de R$ 380,00",
@@ -247,7 +247,7 @@
       {
         "title": "Injeção eletrônica e motor",
         "category": "Diagnóstico e desempenho",
-        "image": "/images/servico-revisao.webp",
+        "image": "./images/servico-revisao.webp",
         "pricePrefix": "A partir de",
         "priceValue": "R$ 220,00",
         "price": "A partir de R$ 220,00",

@@ -11,8 +11,8 @@ export default function AboutOrganism({
   const { subtitle = '', title = '', values = [] } = about;
   const { name = '', fullDescription = '' } = company;
   const unitImages = [
-    '/images/unidade-salgado-filho.webp',
-    '/images/unidade-julio-castilho.webp'
+    './images/unidade-salgado-filho.webp',
+    './images/unidade-julio-castilho.webp'
   ];
 
   return (

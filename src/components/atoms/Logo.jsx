@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export default function Logo({
   className = "",
-  src = "/images/logo.webp",
+  src = "./images/logo.webp",
   alt = "Jeferson Autocenter",
   showBox = true,
   textOnly = false,
@@ -13,14 +13,14 @@ export default function Logo({
 
   if (textOnly) {
     return (
-      <a href="/" className={className} {...props}>
+      <a href="#" className={className} {...props}>
         <span className="text-lg font-black tracking-tight text-white leading-none">Jeferson</span>
       </a>
     );
   }
 
   return (
-    <a href="/" className={`inline-flex items-center gap-3 ${className}`} {...props}>
+    <a href="#" className={`inline-flex items-center gap-3 ${className}`} {...props}>
       {!imageFailed ? (
         <img
           src={src}
@@ -30,9 +30,9 @@ export default function Logo({
           decoding="async"
           className="h-10 md:h-12 w-auto max-w-[190px] md:max-w-[240px] object-contain transition-transform hover:scale-105"
           onError={(e) => {
-            if (src === "/images/logo.webp" && !e.currentTarget.dataset.retried) {
+            if ((src === "/images/logo.webp" || src === "./images/logo.webp") && !e.currentTarget.dataset.retried) {
               e.currentTarget.dataset.retried = "true";
-              e.currentTarget.src = "/images/logo.png";
+              e.currentTarget.src = "./images/logo.png";
             } else {
               setImageFailed(true);
             }
