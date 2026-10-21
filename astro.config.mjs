@@ -6,5 +6,7 @@ export default defineConfig({
   integrations: [
     react(),
     tailwind()
-  ]
+  ],
+  site: 'https://Vitor-Bruno-G-Santos.github.io',
+  base: '/Lading-Page-JefersonAutoCenter'
 });
