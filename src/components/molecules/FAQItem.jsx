@@ -1,12 +1,15 @@
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 
-export default function FAQItem({ id, question, answer, isOpen, onToggle }) {
+export default function FAQItem({ id, question, answer, isOpen, onToggle, delay = 0 }) {
   const panelId = `faq-panel-${id}`;
   const buttonId = `faq-button-${id}`;
 
   return (
-    <div className="bg-[#001f5c] border border-blue-900/60 rounded-xl overflow-hidden transition-all">
+    <div 
+      className="reveal-card bg-[#001f5c] border border-blue-900/60 rounded-xl overflow-hidden transition-all"
+      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
+    >
       <button
         id={buttonId}
         type="button"

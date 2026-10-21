@@ -25,7 +25,7 @@ export default function ServicesPricingOrganism({
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           {services.map((s, idx) => (
-            <ServiceCard key={idx} {...s} whatsappLink={whatsappLink} units={units} />
+            <ServiceCard key={idx} {...s} whatsappLink={whatsappLink} units={units} delay={idx * 150} />
           ))}
         </div>
 

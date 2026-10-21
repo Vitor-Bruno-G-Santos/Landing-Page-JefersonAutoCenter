@@ -54,7 +54,7 @@ export default function LocationMapsOrganism({ units = [] }) {
         </div>
 
         {/* CONTEÚDO DO MAPA E DETALHES */}
-        <div id="unit-tabpanel" role="tabpanel" aria-labelledby={`unit-tab-${activeTab}`} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-[#001f5c] p-6 md:p-8 rounded-3xl border border-blue-900 shadow-2xl">
+        <div id="unit-tabpanel" role="tabpanel" aria-labelledby={`unit-tab-${activeTab}`} className="reveal-card grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-[#001f5c] p-6 md:p-8 rounded-3xl border border-blue-900 shadow-2xl">
           
           {/* DETALHES DA UNIDADE */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">

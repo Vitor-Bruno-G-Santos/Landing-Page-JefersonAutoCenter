@@ -30,7 +30,8 @@ export default function HowItWorksOrganism({
             return (
               <div
                 key={idx}
-                className="bg-[#001f5c] rounded-2xl p-6 border border-blue-800/80 hover:border-[#ffcc00]/60 transition-colors shadow-xl flex flex-col justify-between"
+                className="reveal-card bg-[#001f5c] rounded-2xl p-6 border border-blue-800/80 hover:border-[#ffcc00]/60 transition-colors shadow-xl flex flex-col justify-between"
+                style={{ transitionDelay: `${idx * 120}ms` }}
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">

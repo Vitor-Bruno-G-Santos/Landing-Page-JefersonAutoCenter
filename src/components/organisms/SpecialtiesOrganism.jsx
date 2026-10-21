@@ -35,6 +35,7 @@ export default function SpecialtiesOrganism({
               key={idx}
               title={itemTitle}
               desc={itemDesc}
+              delay={(idx % 3) * 100}
             />
           );
         })}

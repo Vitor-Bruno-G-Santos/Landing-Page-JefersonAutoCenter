@@ -81,6 +81,23 @@ body {
   animation-play-state: paused;
 }
 
+/* Animação de surgimento suave dos cards no scroll */
+html.js .reveal-card {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.2s ease, 
+              box-shadow 0.2s ease,
+              background-color 0.2s ease;
+  will-change: opacity, transform;
+}
+
+html.js .reveal-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 section[id] {
   scroll-margin-top: 4.5rem;
 }

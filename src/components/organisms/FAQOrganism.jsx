@@ -29,6 +29,7 @@ export default function FAQOrganism({
               answer={faq.a}
               isOpen={openIndex === index}
               onToggle={() => setOpenIndex(openIndex === index ? -1 : index)}
+              delay={index * 80}
             />
           ))}
         </div>

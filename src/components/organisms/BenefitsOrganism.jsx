@@ -26,7 +26,11 @@ export default function BenefitsOrganism({
           {benefits.map((b, index) => {
             const Icon = icons[index] || Car;
             return (
-              <div key={index} className="w-full md:w-[calc(33.333%-1rem)] bg-[#001f5c] p-6 rounded-2xl border border-blue-900/60 shadow-lg">
+              <div 
+                key={index} 
+                className="reveal-card w-full md:w-[calc(33.333%-1rem)] bg-[#001f5c] p-6 rounded-2xl border border-blue-900/60 shadow-lg"
+                style={{ transitionDelay: `${(index % 3) * 120}ms` }}
+              >
                 <div className="w-12 h-12 bg-[#ffcc00] text-gray-900 rounded-xl flex items-center justify-center mb-4 font-black">
                   <Icon className="w-6 h-6" />
                 </div>

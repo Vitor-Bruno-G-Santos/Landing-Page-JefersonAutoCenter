@@ -37,7 +37,7 @@ export default function TestimonialsOrganism({
         </div>
 
         {/* Carrossel Infinito de Avaliações */}
-        <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_4%,black_96%,transparent)] py-4">
+        <div className="reveal-card relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_4%,black_96%,transparent)] py-4">
           <div className="animate-marquee-infinite flex gap-6 w-max">
             {[...testimonials, ...testimonials].map((t, idx) => (
               <div key={idx} className="w-[300px] sm:w-[360px] md:w-[400px] shrink-0">
