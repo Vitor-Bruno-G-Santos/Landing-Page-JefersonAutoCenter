@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import FAQItem from '../molecules/FAQItem';
+import { highlightBrand } from '../../utils/highlightBrand';
 
 export default function FAQOrganism({ 
   faqs = [],
@@ -14,15 +15,16 @@ export default function FAQOrganism({
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-black text-white">
-            {faqTitle}
+            {highlightBrand(faqTitle)}
           </h2>
-          <p className="text-gray-300 mt-2 text-sm">{faqSubtitle}</p>
+          <p className="text-gray-200 mt-2 text-base">{faqSubtitle}</p>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}
+              id={index}
               question={faq.q}
               answer={faq.a}
               isOpen={openIndex === index}

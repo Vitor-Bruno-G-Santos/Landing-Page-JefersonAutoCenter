@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Button from '../atoms/Button';
 import WhatsAppIcon from '../atoms/WhatsAppIcon';
 import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
+import { highlightBrand } from '../../utils/highlightBrand';
 
 export default function LocationMapsOrganism({ units = [] }) {
   const [activeTab, setActiveTab] = useState(0);
@@ -26,12 +27,20 @@ export default function LocationMapsOrganism({ units = [] }) {
         </div>
 
         {/* TABS DE SELEÇÃO */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
+        <div role="tablist" aria-label="Unidades Jeferson Autocenter" className="flex flex-wrap justify-center gap-3 mb-8">
           {units.map((unit, index) => (
             <button
               type="button"
+              role="tab"
+              aria-selected={activeTab === index}
+              aria-controls="unit-tabpanel"
+              id={`unit-tab-${index}`}
               key={index}
               onClick={() => setActiveTab(index)}
+              onKeyDown={(e) => {
+                if (e.key === 'ArrowRight') setActiveTab((index + 1) % units.length);
+                if (e.key === 'ArrowLeft') setActiveTab((index - 1 + units.length) % units.length);
+              }}
               className={`px-5 py-3 rounded-xl font-bold text-sm md:text-base transition-all flex items-center gap-2 cursor-pointer ${
                 activeTab === index
                   ? 'bg-[#ffcc00] text-gray-900 shadow-lg scale-105'
@@ -45,7 +54,7 @@ export default function LocationMapsOrganism({ units = [] }) {
         </div>
 
         {/* CONTEÚDO DO MAPA E DETALHES */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-[#001f5c] p-6 md:p-8 rounded-3xl border border-blue-900 shadow-2xl">
+        <div id="unit-tabpanel" role="tabpanel" aria-labelledby={`unit-tab-${activeTab}`} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-[#001f5c] p-6 md:p-8 rounded-3xl border border-blue-900 shadow-2xl">
           
           {/* DETALHES DA UNIDADE */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
@@ -53,7 +62,7 @@ export default function LocationMapsOrganism({ units = [] }) {
               <span className="bg-[#ffcc00]/20 text-[#ffcc00] text-xs font-bold px-3 py-1 rounded-full uppercase border border-[#ffcc00]/30">
                 {currentUnit.badge}
               </span>
-              <h3 className="text-2xl font-extrabold text-white mt-3 mb-2">{currentUnit.name}</h3>
+              <h3 className="text-2xl font-extrabold text-white mt-3 mb-2">{highlightBrand(currentUnit.name)}</h3>
               <p className="text-gray-300 text-sm flex items-start gap-2 mb-4">
                 <MapPin className="w-5 h-5 text-[#ffcc00] shrink-0 mt-0.5" />
                 {currentUnit.address}

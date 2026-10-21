@@ -2,25 +2,34 @@
   "company": {
     "name": "Jeferson Autocenter",
     "shortName": "Jeferson",
-    "badge": "Oficina Mecânica em Campo Grande - MS • 2 Unidades",
-    "tagline": "Oficina Mecânica de Confiança em Campo Grande",
-    "description": "Sua oficina mecânica de confiança em Campo Grande - MS. Manutenção preventiva e corretiva com garantia e agilidade.",
-    "fullDescription": "Com anos de história no setor automotivo em Campo Grande, o Jeferson Autocenter nasceu da paixão por mecânica e do compromisso em oferecer um atendimento verdadeiramente honesto aos motoristas sul-mato-grossenses.",
-    "experienceYears": "15",
-    "cnpj": "",
+    "logo": "/images/logo.webp",
+    "foundedYear": "2009",
+    "badge": "Oficina mecânica em Campo Grande - MS • 2 unidades próprias",
+    "tagline": "Você sabe o que o carro precisa e aprova cada item antes do serviço",
+    "taglineHighlight": "aprova cada item",
+    "description": "Manutenção preventiva e corretiva no Jeferson Autocenter com diagnóstico computadorizado, orçamento enviado no seu WhatsApp e 90 dias de garantia por escrito.",
+    "footerDescription": "Oficina mecânica multimarcas fundada em 2009 em Campo Grande - MS, estruturada em duas unidades próprias na Av. Salgado Filho e na Av. Júlio de Castilho.",
+    "fullDescription": "Fundado em 2009 em Campo Grande - MS, o Jeferson Autocenter soma mais de 17 anos de atuação com foco em diagnóstico técnico preciso e transparência: o cliente recebe a avaliação detalhada e o orçamento discriminado antes de autorizar qualquer manutenção.",
+    "experienceYears": "17",
+    "cnpj": "Consulte na unidade",
     "city": "Campo Grande - MS",
+    "hours": "Seg a Sex: 07h30 às 18h00 • Sáb e Dom: Fechado",
     "rating": {
-      "score": "4.7/5",
+      "score": "4.7",
+      "scoreFormatted": "4.7/5",
       "reviewsCount": "162",
       "platform": "Google"
     }
   },
   "contact": {
-    "phone": "(67) 3222-6559 | (67) 3253-4135",
-    "phonePrimary": "(67) 3222-6559",
-    "phoneSecondary": "(67) 3253-4135",
-    "whatsapp": "https://wa.me/556732226559",
-    "whatsappMessage": "Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20para%20o%20meu%20carro.",
+    "phone": "(67) 3025-4562 | (67) 3222-6559",
+    "phonePrimary": "(67) 3025-4562",
+    "phonePrimaryTel": "+556730254562",
+    "phoneSecondary": "(67) 3222-6559",
+    "phoneSecondaryTel": "+556732226559",
+    "whatsapp": "https://wa.me/5567992479213",
+    "whatsappDisplay": "(67) 99247-9213",
+    "whatsappMessage": "Olá! Vim pelo site e gostaria de agendar um diagnóstico para o meu carro.",
     "email": ""
   },
   "branding": {
@@ -31,215 +40,290 @@
     "lightBlue": "#002266"
   },
   "units": [
-        {
-      "name": "Salgado Filho (Loja 1)",
+    {
+      "name": "Unidade 1 — Salgado Filho",
       "shortName": "Salgado Filho",
       "badge": "Unidade 1",
       "address": "Av. Salgado Filho, 2057 - Vila Carvalho, Campo Grande - MS",
       "phone": "(67) 3025-4562 | (67) 3025-5362",
+      "primaryTel": "+556730254562",
+      "whatsappDisplay": "(67) 99247-9213",
+      "hours": "Seg a Sex: 07h30 às 18h00 • Sáb e Dom: Fechado",
       "mapsUrl": "https://maps.google.com/?q=Av.+Salgado+Filho,+2057+-+Vila+Carvalho,+Campo+Grande+-+MS",
       "embedUrl": "https://www.google.com/maps?q=Av.+Salgado+Filho,+2057+-+Vila+Carvalho,+Campo+Grande+-+MS&output=embed",
-      "whatsapp": "https://wa.me/5567992479213?text=Olá!%20Gostaria%20de%20atendimento%20na%20unidade%20Salgado%20Filho."
+      "whatsapp": "https://wa.me/5567992479213?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20na%20Unidade%20Salgado%20Filho."
     },
     {
-      "name": "Júlio de Castilho (Loja 2)",
+      "name": "Unidade 2 — Júlio de Castilho",
       "shortName": "Júlio de Castilho",
       "badge": "Unidade 2",
       "address": "Av. Júlio de Castilho, 1636 - Vila Alba, Campo Grande - MS",
       "phone": "(67) 3222-6559 | (67) 3253-4135",
+      "primaryTel": "+556732226559",
+      "whatsappDisplay": "(67) 3222-6559",
+      "hours": "Seg a Sex: 07h30 às 18h00 • Sáb e Dom: Fechado",
       "mapsUrl": "https://maps.google.com/?q=Av.+J%C3%BAlio+de+Castilho,+1636+-+Vila+Alba,+Campo+Grande+-+MS",
       "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.892015525531!2d-54.63688122393278!3d-20.469539381043306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8bf8327d42d%3A0xb3df6e3f56e09c2d!2sAv.%20J%C3%BAlio%20de%20Castilho%2C%201636%20-%20Vila%20Alba%2C%20Campo%20Grande%20-%20MS!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr",
-      "whatsapp": "https://wa.me/556732226559?text=Olá!%20Gostaria%20de%20atendimento%20na%20unidade%20Júlio%20de%20Castilho."
+      "whatsapp": "https://wa.me/556732226559?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20na%20Unidade%20J%C3%BAlio%20de%20Castilho."
     }
   ],
   "cta": {
-    "primary": "Solicitar Orçamento Grátis",
-    "secondary": "Falar no WhatsApp",
-    "schedule": "Agendar Agora",
-    "quote": "Solicitar Orçamento"
+    "primary": "Agendar Diagnóstico pelo WhatsApp",
+    "secondary": "Agendar pelo WhatsApp",
+    "schedule": "Agendar Diagnóstico pelo WhatsApp",
+    "quote": "Agendar Diagnóstico pelo WhatsApp"
   },
   "differentials": {
-    "title": "Por que escolher a Jeferson Autocenter?",
+    "title": "Por que escolher o Jeferson Autocenter?",
     "items": [
-      "Sem surpresas no valor: Aprovação prévia antes de qualquer manutenção.",
-      "2 Unidades Próprias: Av. Júlio de Castilho e Av. Salgado Filho.",
-      "Equipamentos Computadorizados: Scanner avançado para injeção e motor."
+      "Aprovação prévia: você confere o orçamento detalhado no WhatsApp antes de autorizar o serviço.",
+      "2 unidades próprias: Av. Salgado Filho e Av. Júlio de Castilho.",
+      "Garantia de 90 dias por escrito em peças e mão de obra na ordem de serviço."
+    ]
+  },
+  "howItWorks": {
+    "title": "Como funciona o atendimento no Jeferson Autocenter",
+    "subtitle": "Processo transparente em 4 etapas para você saber exatamente o que está sendo feito no seu veículo.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Agendamento ou chegada na unidade",
+        "desc": "Chame no WhatsApp ou ligue para escolher a unidade mais próxima (Salgado Filho ou Júlio de Castilho) e trazer seu veículo."
+      },
+      {
+        "step": "02",
+        "title": "Diagnóstico técnico com scanner",
+        "desc": "Nossa equipe realiza leitura computadorizada e inspeção mecânica no elevador para identificar a causa real do problema."
+      },
+      {
+        "step": "03",
+        "title": "Orçamento discriminado no seu WhatsApp",
+        "desc": "Enviamos o diagnóstico claro e o orçamento discriminado de peças e mão de obra para você avaliar e aprovar."
+      },
+      {
+        "step": "04",
+        "title": "Execução autorizada e 90 dias de garantia",
+        "desc": "O serviço só começa após sua aprovação e é entregue no prazo combinado com garantia registrada na ordem de serviço."
+      }
     ]
   },
   "benefits": {
-    "title": "Por Que Somos Referência em Campo Grande?",
-    "subtitle": "Duas unidades equipadas em Campo Grande para cuidar da revisão, suspensão, freios e motor do seu veículo com orçamento transparente.",
+    "title": "Por que somos referência em Campo Grande?",
+    "subtitle": "Estrutura completa nas duas unidades para revisão, suspensão, freios e motor com garantia registrada.",
     "items": [
       {
-        "title": "Diagnóstico Computadorizado",
-        "desc": "Leitura eletrônica completa de injeção, sensores e falhas de motor antes de trocar qualquer peça."
+        "title": "Diagnóstico computadorizado",
+        "desc": "Leitura eletrônica completa de injeção, sensores e falhas de motor antes de substituir qualquer componente."
       },
       {
-        "title": "Garantia por Escrito",
-        "desc": "Todos os serviços realizados e peças substituídas têm garantia registrada na ordem de serviço."
+        "title": "Garantia de 90 dias por escrito",
+        "desc": "Todos os serviços realizados e peças substituídas possuem garantia de 90 dias registrada na ordem de serviço."
       },
       {
-        "title": "Agilidade no Atendimento",
-        "desc": "Boxes equipados e processos organizados nas duas unidades para cumprir o prazo combinado."
+        "title": "Cumprimento do prazo combinado",
+        "desc": "Boxes equipados e fluxo organizado nas duas unidades para entregar seu veículo no horário acordado."
       },
       {
-        "title": "Revisão Geral Preventiva",
-        "desc": "Inspeção completa de freios, suspensão, correias, arrefecimento e fluidos para você rodar seguro."
+        "title": "Revisão preventiva completa",
+        "desc": "Check-up de freios, suspensão, correias, arrefecimento e fluidos para você viajar com segurança."
       },
       {
-        "title": "Equipe Especializada",
-        "desc": "Mecânicos experientes em veículos nacionais, importados e utilitários, do básico ao motor e câmbio."
+        "title": "Equipe especializada multimarcas",
+        "desc": "Mecânicos qualificados em veículos nacionais, importados e utilitários, da revisão periódica ao motor e câmbio."
       }
     ]
   },
   "painPoints": {
-    "title": "Você já passou por alguma dessas situações frustrantes?",
-    "subtitle": "Sabemos como é ruim não poder confiar no serviço da sua oficina.",
-    "solutionTitle": "No Jeferson Autocenter é Diferente!",
-    "solutionDesc": "Aqui você recebe vídeos do diagnóstico no WhatsApp, aprova cada item antes do serviço começar e conta com garantia contratual de peças e mão de obra.",
+    "title": "Comparativo: oficinas comuns vs. padrão Jeferson Autocenter",
+    "subtitle": "Veja como eliminamos as principais dores de cabeça na manutenção do seu carro.",
+    "solutionTitle": "No Jeferson Autocenter é diferente",
+    "solutionDesc": "Você recebe o orçamento detalhado no WhatsApp, aprova cada item antes de começarmos e recebe garantia de 90 dias por escrito.",
+    "comparisons": [
+      {
+        "pain": "Orçamentos que dobram de valor na hora de buscar o carro sem aviso prévio.",
+        "solution": "Nenhum parafuso é trocado sem sua aprovação prévia no orçamento enviado por WhatsApp."
+      },
+      {
+        "pain": "Troca de peças por tentativa e erro sem resolver o barulho ou falha do veículo.",
+        "solution": "Diagnóstico computadorizado com scanner e inspeção técnica detalhada no elevador."
+      },
+      {
+        "pain": "Insegurança de pegar estrada com a família após uma revisão superficial.",
+        "solution": "Checklist preventivo completo de freios, suspensão, arrefecimento, correias e fluidos."
+      },
+      {
+        "pain": "Dúvida sobre a procedência das peças instaladas e falta de garantia clara.",
+        "solution": "Peças de reposição homologadas e garantia de 90 dias registrada na ordem de serviço."
+      }
+    ],
     "items": [
-      "Cansado de orçamentos que dobram de valor na hora de pagar?",
-      "Aquele barulho chato no carro que a mecânica anterior não conseguiu resolver?",
-      "Medo de ficar na mão durante uma viagem com a sua família?",
-      "Preocupação com peças paralelas de baixa qualidade sendo instaladas no seu veículo?"
+      "Orçamentos que dobram de valor na hora de pagar?",
+      "Barulho no carro que a oficina anterior não resolveu?",
+      "Receio de ficar na mão durante uma viagem com a família?",
+      "Dúvida sobre a qualidade das peças instaladas no veículo?"
     ]
   },
   "about": {
-    "subtitle": "Tradição & Respeito",
-    "title": "Quem Está Por Trás do {companyName}",
+    "subtitle": "Desde 2009 em Campo Grande",
+    "title": "Quem está por trás do {companyName}",
     "values": [
       {
-        "title": "Qualificação Técnica",
-        "desc": "Treinamento constante em novas tecnologias automotivas e híbridas."
+        "title": "Qualificação técnica contínua",
+        "desc": "Equipe atualizada em injeção eletrônica, câmbio automático e sistemas modernos de freios e suspensão."
       },
       {
-        "title": "Transparência Total",
-        "desc": "Aprovação prévia detalhada com fotos e vídeos das peças envolvidas."
+        "title": "Transparência documentada",
+        "desc": "Aprovação prévia detalhada com orçamento discriminado antes da execução de qualquer serviço."
       },
       {
-        "title": "Peças de Qualidade",
-        "desc": "Trabalhamos apenas com componentes homologados e das melhores marcas."
+        "title": "Peças homologadas com garantia",
+        "desc": "Componentes de primeira linha com 90 dias de garantia registrados na ordem de serviço."
       }
     ]
   },
   "services": {
-    "title": "Serviços & Manutenção Automotiva",
-    "subtitle": "Orçamento transparente antes de qualquer execução e condições facilitadas nas duas unidades.",
+    "title": "Serviços e manutenção automotiva",
+    "subtitle": "Aprovação prévia no WhatsApp e parcelamento em até 10x nas duas unidades.",
+    "priceDisclaimer": "*Valores de referência para veículos de passeio linha leve (ex.: óleo semissintético até 4 litros). O valor exato é confirmado após verificação da especificação da montadora para o seu veículo.",
     "specialties": [
-      "Alinhamento e Balanceamento",
-      "Freios, Discos e Pastilhas",
-      "Suspensão e Amortecedores",
-      "Troca de Óleo de Câmbio Automático",
-      "Embreagem, Correias e Tensores",
-      "Sistema de Arrefecimento"
+      {
+        "title": "Alinhamento e balanceamento",
+        "desc": "Ajuste de geometria de direção para evitar desgaste irregular de pneus e puxadas no volante."
+      },
+      {
+        "title": "Freios, discos, pastilhas e ABS",
+        "desc": "Substituição de pastilhas, discos, fluido DOT4 e diagnóstico eletrônico do sistema ABS."
+      },
+      {
+        "title": "Suspensão, buchas e amortecedores",
+        "desc": "Eliminação de folgas e ruídos com troca de amortecedores, bandejas, bieletas e coxins."
+      },
+      {
+        "title": "Troca de óleo de câmbio automático",
+        "desc": "Substituição técnica de fluido de transmissão automática respeitando a norma de cada fabricante."
+      },
+      {
+        "title": "Embreagem, correia dentada e tensores",
+        "desc": "Troca preventiva de kits de distribuição e embreagem com ferramental de fasagem específico."
+      },
+      {
+        "title": "Sistema de arrefecimento e revisão térmica",
+        "desc": "Limpeza técnica, troca de aditivo na proporção correta, válvula termostática, bomba d'água e mangueiras."
+      }
     ],
     "items": [
       {
-        "title": "Troca de Óleo e Filtro",
-        "category": "Lubrificação & Motor",
-        "image": "/images/servico-oleo.jpg",
-        "price": "A partir de R$205,99",
+        "title": "Troca de óleo e filtro",
+        "category": "Lubrificação e motor",
+        "image": "/images/servico-oleo.webp",
+        "pricePrefix": "A partir de",
+        "priceValue": "R$ 205,99",
+        "price": "A partir de R$ 205,99",
         "popular": false,
         "features": [
-          "Óleo Lubrificante Homologado na Viscosidade Correta",
-          "Troca do Filtro de Óleo do Motor",
-          "Inspeção Visual de Fluidos e Vazamentos",
-          "Etiqueta de Controle + Reset do Painel"
+          "Óleo lubrificante homologado na viscosidade correta",
+          "Troca do filtro de óleo do motor",
+          "Inspeção visual de fluidos e vazamentos",
+          "Etiqueta de controle e reset do painel"
         ]
       },
       {
-        "title": "Revisão Preventiva Completa",
-        "category": "Check-up Geral & Segurança",
-        "image": "/images/servico-injecao.jpg",
-        "price": "A partir de R$ 380",
+        "title": "Revisão preventiva completa",
+        "category": "Check-up geral e segurança",
+        "image": "/images/servico-injecao.webp",
+        "pricePrefix": "A partir de",
+        "priceValue": "R$ 380,00",
+        "price": "A partir de R$ 380,00",
         "popular": true,
-        "badgeText": "Mais Procurado",
+        "badgeText": "Mais procurado",
         "features": [
-          "Diagnóstico Computadorizado via Scanner",
-          "Inspeção de Freios, Discos e Pastilhas",
-          "Análise de Suspensão, Buchas e Amortecedores",
-          "Verificação de Correias, Velas e Arrefecimento",
-          "Alinhamento + Balanceamento das 4 Rodas"
+          "Diagnóstico computadorizado via scanner",
+          "Inspeção de freios, discos e pastilhas",
+          "Análise de suspensão, buchas e amortecedores",
+          "Verificação de correias, velas e arrefecimento",
+          "Alinhamento e balanceamento das 4 rodas"
         ]
       },
       {
-        "title": "Injeção Eletrônica & Motor",
-        "category": "Diagnóstico & Desempenho",
-        "image": "/images/servico-revisao.jpg",
-        "price": "A partir de R$ 220",
+        "title": "Injeção eletrônica e motor",
+        "category": "Diagnóstico e desempenho",
+        "image": "/images/servico-revisao.webp",
+        "pricePrefix": "A partir de",
+        "priceValue": "R$ 220,00",
+        "price": "A partir de R$ 220,00",
         "popular": false,
         "features": [
-          "Leitura Eletrônica de Falhas e Sensores",
-          "Limpeza e Equalização de Bicos Injetores",
-          "Troca e Calibragem de Velas e Cabos",
-          "Diagnóstico de Consumo, Falhas e Cabeçote"
+          "Leitura eletrônica de falhas e sensores",
+          "Limpeza e equalização de bicos injetores",
+          "Troca e calibragem de velas e cabos",
+          "Diagnóstico de consumo, falhas e cabeçote"
         ]
       }
     ]
   },
   "testimonials": {
-    "title": "Quem Experimenta, Recomenda",
-    "subtitle": "Avaliações reais de clientes atendidos nas unidades Salgado Filho e Júlio de Castilho.",
+    "title": "O que dizem os clientes atendidos nas nossas unidades",
+    "subtitle": "Relatos de motoristas atendidos nas unidades Salgado Filho e Júlio de Castilho.",
     "googleReviewsUrl": "https://maps.google.com/?q=Jeferson+Autocenter+Av.+Salgado+Filho,+2057+Campo+Grande+MS",
     "totalReviews": "162",
     "rating": "4.7",
     "items": [
       {
         "name": "Carlos Eduardo Silva",
-        "role": "Unidade Salgado Filho • Local Guide",
-        "date": "Há 2 meses",
+        "role": "Cliente • Unidade 1 — Salgado Filho",
+        "date": "Set/2026",
         "avatarColor": "bg-emerald-600",
-        "comment": "Levei meu Civic na loja da Salgado Filho com um barulho na suspensão dianteira que outra oficina queria condenar a caixa de direção inteira. Mostraram no elevador que eram só as bieletas e buchas da barra. Serviço honesto e preço justo."
+        "comment": "Levei meu Civic na unidade da Salgado Filho com barulho na dianteira. Identificaram na inspeção que eram apenas as bieletas e buchas da barra estabilizadora. Serviço honesto e preço justo."
       },
       {
         "name": "Mariana Alencar",
-        "role": "Unidade Júlio de Castilho",
-        "date": "Há 3 semanas",
+        "role": "Cliente • Unidade 2 — Júlio de Castilho",
+        "date": "Set/2026",
         "avatarColor": "bg-purple-600",
-        "comment": "Atendimento excelente desde a recepção. Mandaram o orçamento completo pelo WhatsApp com vídeo das pastilhas e discos antes de mexer no carro. Entregaram no mesmo dia dentro do horário combinado."
+        "comment": "Atendimento excelente desde a recepção. Mandaram o orçamento completo e detalhado pelo WhatsApp antes de mexer no carro. Entregaram no mesmo dia dentro do horário combinado."
       },
       {
         "name": "Roberto Mendes",
-        "role": "Unidade Salgado Filho • Local Guide",
-        "date": "Há 1 mês",
+        "role": "Cliente • Unidade 1 — Salgado Filho",
+        "date": "Ago/2026",
         "avatarColor": "bg-amber-600",
-        "comment": "Faço a manutenção preventiva da minha caminhonete e do carro da minha esposa no Jeferson Autocenter há anos. Oficina limpa, alinhamento 3D bem feito e equipe que explica tudo sem enrolação."
+        "comment": "Faço a manutenção preventiva da minha caminhonete e do carro da minha esposa no Jeferson Autocenter há anos. Oficina organizada, alinhamento bem feito e equipe que explica tudo sem enrolação."
       }
     ]
   },
   "metrics": {
     "items": [
-      { "number": "+15 Anos", "label": "De Experiência em MS" },
-      { "number": "+12.000", "label": "Veículos Atendidos" },
-      { "number": "4.7/5", "label": "Nota Média no Google" },
-      { "number": "2 Lojas", "label": "Em Pontos Estratégicos" }
+      { "number": "+17 anos", "label": "de atuação em MS (desde 2009)" },
+      { "number": "+12.000", "label": "atendimentos realizados" },
+      { "number": "4.7/5", "label": "nota média no Google (162 avaliações)" },
+      { "number": "2 unidades", "label": "Salgado Filho e Júlio de Castilho" }
     ]
   },
   "faq": {
-    "title": "Perguntas Frequentes",
-    "subtitle": "Tire suas dúvidas antes de agendar seu serviço.",
+    "title": "Perguntas frequentes",
+    "subtitle": "Tire suas dúvidas antes de agendar o diagnóstico do seu veículo.",
     "items": [
       {
         "q": "Preciso agendar antes de levar meu carro?",
-        "a": "Recomendamos o agendamento prévio via WhatsApp para garantir atendimento prioritário, mas também atendemos casos de emergência diretamente nas lojas."
+        "a": "Recomendamos agendar pelo WhatsApp ou telefone para garantir atendimento prioritário na chegada, mas também recebemos veículos diretamente nas duas unidades de segunda a sexta, das 07h30 às 18h00."
       },
       {
-        "q": "Vocês dão garantia no serviço e nas peças?",
-        "a": "Sim! Todos os serviços executados e peças trocadas possuem garantia total por escrito para sua máxima segurança."
+        "q": "Qual é o prazo de garantia dos serviços e peças?",
+        "a": "Todos os serviços executados e peças substituídas contam com 90 dias de garantia por escrito registrados na ordem de serviço."
       },
       {
         "q": "Quais são as formas de pagamento aceitas?",
-        "a": "Aceitamos cartões de crédito (com parcelamento em até 10x), débito, PIX e dinheiro."
+        "a": "Aceitamos cartões de crédito com parcelamento em até 10x, cartões de débito, PIX e dinheiro."
       },
       {
-        "q": "Como recebo o orçamento do meu veículo?",
-        "a": "Após a avaliação, enviamos o diagnóstico detalhado diretamente no seu WhatsApp, incluindo fotos e custos de peças e mão de obra para você aprovar."
+        "q": "Como funciona a aprovação do orçamento pelo WhatsApp?",
+        "a": "Após a avaliação técnica na unidade com scanner e inspeção no elevador, enviamos no seu WhatsApp o orçamento detalhado discriminando peças e mão de obra. Só executamos o que você aprovar."
       }
     ]
   },
   "socialProof": {
     "enabled": true,
-    "text": "Diagnóstico Rápido",
+    "text": "Garantia de 90 dias por escrito",
     "showRating": true
   }
 }

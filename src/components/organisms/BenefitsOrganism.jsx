@@ -1,23 +1,23 @@
 "use client";
 import React from 'react';
-import { Wrench, Shield, Zap, Car, Award } from 'lucide-react';
+import { Cpu, ShieldCheck, Clock, Car, Users } from 'lucide-react';
+import { highlightBrand } from '../../utils/highlightBrand';
 
 export default function BenefitsOrganism({ 
   benefits = [],
   benefitsTitle = '',
   benefitsSubtitle = ''
 }) {
-
-  const icons = [Wrench, Shield, Zap, Car, Award];
+  const icons = [Cpu, ShieldCheck, Clock, Car, Users];
 
   return (
-    <section className="bg-[#002d80] py-16 px-4">
+    <section className="bg-[#002d80] py-16 px-4 border-t border-blue-900/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-black text-white">
-            {benefitsTitle}
+            {highlightBrand(benefitsTitle)}
           </h2>
-          <p className="text-gray-300 mt-2 max-w-2xl mx-auto">
+          <p className="text-gray-200 text-base mt-2 max-w-2xl mx-auto">
             {benefitsSubtitle}
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function BenefitsOrganism({
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{b.title}</h3>
-                <p className="text-sm text-gray-300 leading-relaxed">{b.desc}</p>
+                <p className="text-base text-gray-200 leading-relaxed">{b.desc}</p>
               </div>
             );
           })}

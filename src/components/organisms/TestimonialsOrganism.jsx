@@ -2,34 +2,24 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import TestimonialCard from '../molecules/TestimonialCard';
-import MetricCard from '../molecules/MetricCard';
 import StarRating from '../atoms/StarRating';
+import { highlightBrand } from '../../utils/highlightBrand';
 
 const DEFAULT_GOOGLE_MAPS_URL =
   'https://maps.google.com/?q=Jeferson+Autocenter+Av.+Salgado+Filho,+2057+Campo+Grande+MS';
 
 export default function TestimonialsOrganism({ 
   testimonials = [],
-  metrics = [],
   testimonialsTitle = '',
   testimonialsSubtitle = '',
   rating = '4.7',
   totalReviews = '162',
   googleReviewsUrl = DEFAULT_GOOGLE_MAPS_URL
 }) {
-
   return (
     <section id="avaliacoes" className="bg-[#002d80] py-16 md:py-20 px-4 border-t border-blue-900/50">
       <div className="max-w-7xl mx-auto">
         
-        {/* MÉTRICAS */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-          {metrics.map((metric, idx) => (
-            <MetricCard key={idx} number={metric.number} label={metric.label} />
-          ))}
-        </div>
-
-        {/* CABEÇALHO DEPOIMENTOS + SELO GOOGLE */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2.5 bg-[#001f5c] border border-blue-700/80 px-4 py-2 rounded-full mb-4 shadow-md">
             <span className="bg-white p-1 rounded-full">
@@ -42,13 +32,13 @@ export default function TestimonialsOrganism({
             </span>
             <span className="text-white font-black text-sm">{rating}</span>
             <StarRating count={5} />
-            <span className="text-xs text-gray-300 font-medium">• {totalReviews} avaliações no Google</span>
+            <span className="text-sm text-gray-200 font-medium">• {totalReviews} avaliações no Google</span>
           </div>
 
           <h2 className="text-2xl md:text-4xl font-black text-white">
-            {testimonialsTitle}
+            {highlightBrand(testimonialsTitle)}
           </h2>
-          <p className="text-gray-300 mt-2">{testimonialsSubtitle}</p>
+          <p className="text-gray-200 text-base mt-2">{testimonialsSubtitle}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -57,7 +47,6 @@ export default function TestimonialsOrganism({
           ))}
         </div>
 
-        {/* LINK PARA O GOOGLE MAPS */}
         <div className="mt-10 text-center">
           <a
             href={googleReviewsUrl}
@@ -65,7 +54,7 @@ export default function TestimonialsOrganism({
             rel="noreferrer"
             className="inline-flex items-center gap-2 bg-[#001f5c] hover:bg-[#001744] text-white hover:text-[#ffcc00] border border-blue-700 hover:border-[#ffcc00] px-6 py-3 rounded-xl text-sm font-bold transition-all shadow-md"
           >
-            <span>Ver avaliações diretamente no Google Maps</span>
+            <span>Conferir avaliações diretamente no Google Maps</span>
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>
@@ -74,4 +63,3 @@ export default function TestimonialsOrganism({
     </section>
   );
 }
-

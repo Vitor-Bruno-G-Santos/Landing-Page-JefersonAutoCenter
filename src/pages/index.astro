@@ -2,16 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import HeaderOrganism from '../components/organisms/HeaderOrganism';
 import HeroOrganism from '../components/organisms/HeroOrganism';
-import PainPointsOrganism from '../components/organisms/PainPointsOrganism';
+import MetricsBarOrganism from '../components/organisms/MetricsBarOrganism';
+import HowItWorksOrganism from '../components/organisms/HowItWorksOrganism';
 import BenefitsOrganism from '../components/organisms/BenefitsOrganism';
 import ServicesPricingOrganism from '../components/organisms/ServicesPricingOrganism';
 import TestimonialsOrganism from '../components/organisms/TestimonialsOrganism';
 import LocationMapsOrganism from '../components/organisms/LocationMapsOrganism';
 import AboutOrganism from '../components/organisms/AboutOrganism';
 import FAQOrganism from '../components/organisms/FAQOrganism';
+import FinalCTAOrganism from '../components/organisms/FinalCTAOrganism';
 import FooterOrganism from '../components/organisms/FooterOrganism';
-import WhatsAppIcon from '../components/atoms/WhatsAppIcon';
-import WhatsAppModalOrganism from '../components/organisms/WhatsAppModalOrganism';
 import companyData from '../data/infos.json';
 import FloatingWhatsAppButton from '../components/molecules/FloatingWhatsAppButton';
 const { 
@@ -25,7 +25,6 @@ const {
   benefits,
   about,
   company,
-  painPoints,
   socialProof,
   cta,
   contact,
@@ -49,7 +48,6 @@ const {
   about: companyData.about,
   company: companyData.company,
   contact: companyData.contact,
-  painPoints: companyData.painPoints,
   socialProof: companyData.socialProof,
   cta: companyData.cta,
   servicesTitle: companyData.services.title,
@@ -64,27 +62,35 @@ const {
 ---
 
 <Layout title={`${companyData.company.name} | ${companyData.company.tagline}`}>
-  <HeaderOrganism client:load whatsappLink={whatsappLink} units={units} />
+  <HeaderOrganism client:load whatsappLink={whatsappLink} units={units} contact={contact} />
   
   <main>
     <HeroOrganism 
-      client:load
+      client:idle
       whatsappLink={whatsappLink} 
       units={units}
       differentials={differentials} 
       company={company}
+      contact={contact}
       cta={cta}
       socialProof={socialProof}
     />
-    <PainPointsOrganism client:load painPoints={painPoints} units={units} />
+    <MetricsBarOrganism metrics={metrics} />
+    <HowItWorksOrganism
+      client:visible
+      howItWorks={companyData.howItWorks}
+      units={units}
+      ctaLabel={cta.primary}
+    />
     <BenefitsOrganism benefits={benefits} benefitsTitle={benefitsTitle} benefitsSubtitle={benefitsSubtitle} />
     <ServicesPricingOrganism 
-      client:load
+      client:visible
       whatsappLink={whatsappLink} 
       units={units}
       services={services}
       servicesTitle={servicesTitle}
       servicesSubtitle={servicesSubtitle}
+      priceDisclaimer={companyData.services.priceDisclaimer}
       specialties={companyData.services.specialties}
     />
     <TestimonialsOrganism 
@@ -92,23 +98,23 @@ const {
       metrics={metrics}
       testimonialsTitle={testimonialsTitle}
       testimonialsSubtitle={testimonialsSubtitle}
-      rating={companyData.testimonials.rating}
-      totalReviews={companyData.testimonials.totalReviews}
+      rating={company.rating.score}
+      totalReviews={company.rating.reviewsCount}
       googleReviewsUrl={companyData.testimonials.googleReviewsUrl}
     />
-    <LocationMapsOrganism client:load units={units} />
-    <AboutOrganism about={about} company={company} units={units} />
+    <LocationMapsOrganism client:visible units={units} />
     <FAQOrganism 
-      client:load
+      client:visible
       faqs={faqs}
       faqTitle={faqTitle}
       faqSubtitle={faqSubtitle}
     />
+    <FinalCTAOrganism client:visible units={units} ctaLabel={cta.primary} />
   </main>
 
-  <FooterOrganism client:load whatsappLink={whatsappLink} units={units} company={company} contact={contact} />
+  <FooterOrganism units={units} company={company} />
 
-  <!-- BOTÃO FLUTUANTE WHATSAPP -->
-<FloatingWhatsAppButton client:load units={units} /> 
+  <!-- BOTÃO FLUTUANTE WHATSAPP / BARRA MOBILE -->
+  <FloatingWhatsAppButton client:idle units={units} primaryTel={contact.phonePrimaryTel} /> 
 </Layout>
 

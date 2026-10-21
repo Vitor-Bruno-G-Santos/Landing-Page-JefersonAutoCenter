@@ -1,15 +1,18 @@
 "use client";
 import React from 'react';
 import { MapPin, CheckCircle2 } from 'lucide-react';
+import { highlightBrand } from '../../utils/highlightBrand';
 
 export default function AboutOrganism({ 
-  about = { subtitle: '', title: '', values: [] },
-  company = { name: '', fullDescription: '', experienceYears: '15' },
+  about = {},
+  company = {},
   units = []
 }) {
+  const { subtitle = '', title = '', values = [] } = about;
+  const { name = '', fullDescription = '' } = company;
   const unitImages = [
-    '/images/unidade-salgado-filho.jpg',
-    '/images/unidade-julio-castilho.jpg'
+    '/images/unidade-salgado-filho.webp',
+    '/images/unidade-julio-castilho.webp'
   ];
 
   return (
@@ -19,17 +22,17 @@ export default function AboutOrganism({
         {/* LADO ESQUERDO: HISTÓRIA E COMPROMISSO */}
         <div className="lg:col-span-6 space-y-5">
           <span className="inline-block bg-[#ffcc00]/15 text-[#ffcc00] border border-[#ffcc00]/30 font-black uppercase text-xs tracking-widest px-3 py-1 rounded-full">
-            {about.subtitle}
+            {subtitle}
           </span>
           <h2 className="text-2xl md:text-4xl font-black text-white leading-tight">
-            {about.title.replace('{companyName}', company.name)}
+            {highlightBrand(title.replace('{companyName}', name))}
           </h2>
           <p className="text-gray-300 text-base leading-relaxed">
-            {company.fullDescription}
+            {fullDescription}
           </p>
 
           <div className="space-y-3 pt-2">
-            {about.values.map((value, index) => (
+            {(values || []).map((value, index) => (
               <div key={index} className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-[#ffcc00] shrink-0 mt-0.5" />
                 <div>
@@ -55,8 +58,11 @@ export default function AboutOrganism({
                 <img
                   src={unitImages[idx] || unitImages[0]}
                   alt={`Estrutura ${unit.name} - Jeferson Autocenter`}
+                  width="400"
+                  height="192"
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
                 <span className="absolute top-3 left-3 bg-[#ffcc00] text-gray-900 text-[11px] font-black px-2.5 py-1 rounded-full uppercase shadow">
                   {unit.badge}
@@ -77,4 +83,3 @@ export default function AboutOrganism({
     </section>
   );
 }
-

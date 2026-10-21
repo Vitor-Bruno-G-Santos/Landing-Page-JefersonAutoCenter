@@ -1,37 +1,67 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../atoms/Logo';
-import { MapPin } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import WhatsAppModalOrganism from '../organisms/WhatsAppModalOrganism';
 
-export default function HeaderOrganism({ whatsappLink = '#', units = [] }) {
+export default function HeaderOrganism({ whatsappLink = '#', units = [], contact = {} }) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: '#como-funciona', label: 'Como funciona' },
+    { href: '#servicos', label: 'Serviços' },
+    { href: '#avaliacoes', label: 'Avaliações' },
+    { href: '#unidades', label: 'Unidades' },
+    { href: '#faq', label: 'Dúvidas' }
+  ];
+
   return (
-    <header className="sticky top-0 z-50 bg-[#001744]/95 backdrop-blur-md border-b border-blue-900/60 py-3.5 px-4 md:px-8">
+    <header className="sticky top-0 z-50 bg-[#001744]/95 backdrop-blur-md border-b border-blue-900/60 py-2.5 px-4 md:px-8">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-        {/* LOGO */}
         <Logo />
 
-        {/* NAVEGAÇÃO RÁPIDA */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-200">
-          <a href="#servicos" className="hover:text-[#ffcc00] transition-colors">Serviços</a>
-          <a href="#avaliacoes" className="hover:text-[#ffcc00] transition-colors">Avaliações</a>
-          <a href="#unidades" className="hover:text-[#ffcc00] transition-colors">Nossas Lojas</a>
-          <a href="#faq" className="hover:text-[#ffcc00] transition-colors">Dúvidas</a>
+        <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-gray-200" aria-label="Navegação principal">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="hover:text-[#ffcc00] transition-colors">
+              {link.label}
+            </a>
+          ))}
         </nav>
 
-        {/* CONTATOS & CTA */}
-        <div className="flex items-center gap-4">
-          <a
-            href="#unidades"
-            className="hidden lg:inline-flex items-center gap-1.5 text-xs font-semibold text-gray-300 hover:text-[#ffcc00] transition-colors"
+        <div className="flex items-center gap-3">
+          <div className="hidden sm:block">
+            <WhatsAppModalOrganism units={units} buttonLabel="Agendar pelo WhatsApp" variant="primary" size="sm" />
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-expanded={mobileMenuOpen}
+            aria-label={mobileMenuOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação'}
+            className="md:hidden p-2 rounded-lg bg-[#001f5c] border border-blue-800 text-gray-200 hover:text-[#ffcc00]"
           >
-            <MapPin className="w-4 h-4 text-[#ffcc00]" />
-            <span>Salgado Filho e Júlio de Castilho</span>
-          </a>
-          <WhatsAppModalOrganism units={units} buttonLabel="Falar no WhatsApp" variant="primary" />
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
         </div>
       </div>
+
+      {mobileMenuOpen && (
+        <nav className="md:hidden mt-3 pt-3 border-t border-blue-900/60 flex flex-col gap-2 pb-2" aria-label="Menu mobile">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-3 py-2 rounded-lg text-base font-semibold text-gray-100 hover:bg-[#001f5c] hover:text-[#ffcc00]"
+            >
+              {link.label}
+            </a>
+          ))}
+          <div className="pt-2 sm:hidden">
+            <WhatsAppModalOrganism units={units} buttonLabel="Agendar pelo WhatsApp" variant="primary" size="sm" className="w-full justify-center" />
+          </div>
+        </nav>
+      )}
     </header>
   );
 }
-
