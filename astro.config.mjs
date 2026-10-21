@@ -7,6 +7,6 @@ export default defineConfig({
     react(),
     tailwind()
   ],
-  site: 'https://Vitor-Bruno-G-Santos.github.io',
-  base: '/Lading-Page-JefersonAutoCenter'
+  site: 'https://vitor-bruno-g-santos.github.io',
+  base: '/Landing-Page-JefersonAutoCenter'
 });
