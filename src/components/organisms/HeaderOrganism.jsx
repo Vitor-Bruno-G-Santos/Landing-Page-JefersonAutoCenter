@@ -16,7 +16,7 @@ export default function HeaderOrganism({ whatsappLink = '#', units = [], contact
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#001744]/95 backdrop-blur-md border-b border-blue-900/60 py-2.5 px-4 md:px-8">
+    <header className="sticky top-0 z-50 w-full bg-[#001744]/95 backdrop-blur-md section-divider-bottom py-2.5 px-4 md:px-8">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
         <Logo />
 

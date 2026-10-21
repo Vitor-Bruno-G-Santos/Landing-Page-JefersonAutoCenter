@@ -11,10 +11,15 @@ export default function ServiceCard({
   popular = false,
   features = [],
   badgeText,
+  badgeVariant,
   ctaLabel = 'Agendar Diagnóstico pelo WhatsApp',
   units = []
 }) {
   const displayValue = priceValue || (price ? price.replace(/^A partir de\s*/i, '') : '');
+
+  const badgeClass = badgeVariant === 'outline'
+    ? 'bg-[#001744]/90 text-[#ffcc00] border border-[#ffcc00]/50 backdrop-blur-sm'
+    : 'bg-[#ffcc00] text-gray-900';
 
   return (
     <div
@@ -25,7 +30,7 @@ export default function ServiceCard({
       }`}
     >
       <div>
-        <div className="relative h-48 w-full bg-[#001744] overflow-hidden">
+        <div className="relative h-52 w-full bg-[#001744] overflow-hidden">
           {image ? (
             <img
               src={image}
@@ -43,8 +48,8 @@ export default function ServiceCard({
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-[#001f5c] via-[#001744]/25 to-transparent" />
 
-          {popular && (
-            <div className="absolute top-3 right-3 bg-[#ffcc00] text-gray-900 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+          {(badgeText || popular) && (
+            <div className={`absolute top-3 right-3 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-md ${badgeClass}`}>
               {badgeText || 'Mais procurado'}
             </div>
           )}

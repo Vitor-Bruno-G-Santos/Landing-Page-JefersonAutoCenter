@@ -1,23 +1,18 @@
 "use client";
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
 import TestimonialCard from '../molecules/TestimonialCard';
 import StarRating from '../atoms/StarRating';
 import { highlightBrand } from '../../utils/highlightBrand';
-
-const DEFAULT_GOOGLE_MAPS_URL =
-  'https://maps.google.com/?q=Jeferson+Autocenter+Av.+Salgado+Filho,+2057+Campo+Grande+MS';
 
 export default function TestimonialsOrganism({ 
   testimonials = [],
   testimonialsTitle = '',
   testimonialsSubtitle = '',
   rating = '4.7',
-  totalReviews = '162',
-  googleReviewsUrl = DEFAULT_GOOGLE_MAPS_URL
+  totalReviews = '162'
 }) {
   return (
-    <section id="avaliacoes" className="bg-[#002d80] py-16 md:py-20 px-4 border-t border-blue-900/50">
+    <section id="avaliacoes" className="bg-gradient-to-b from-[#001744] via-[#001f5c] to-[#002875] py-16 md:py-20 px-4 section-divider-top">
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-12">
@@ -41,22 +36,15 @@ export default function TestimonialsOrganism({
           <p className="text-gray-200 text-base mt-2">{testimonialsSubtitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((t, idx) => (
-            <TestimonialCard key={idx} {...t} />
-          ))}
-        </div>
-
-        <div className="mt-10 text-center">
-          <a
-            href={googleReviewsUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 bg-[#001f5c] hover:bg-[#001744] text-white hover:text-[#ffcc00] border border-blue-700 hover:border-[#ffcc00] px-6 py-3 rounded-xl text-sm font-bold transition-all shadow-md"
-          >
-            <span>Conferir avaliações diretamente no Google Maps</span>
-            <ExternalLink className="w-4 h-4" />
-          </a>
+        {/* Carrossel Infinito de Avaliações */}
+        <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_4%,black_96%,transparent)] py-4">
+          <div className="animate-marquee-infinite flex gap-6 w-max">
+            {[...testimonials, ...testimonials].map((t, idx) => (
+              <div key={idx} className="w-[300px] sm:w-[360px] md:w-[400px] shrink-0">
+                <TestimonialCard {...t} />
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

@@ -9,7 +9,7 @@ export default function FinalCTAOrganism({
   ctaLabel = 'Agendar Diagnóstico pelo WhatsApp'
 }) {
   return (
-    <section className="bg-gradient-to-r from-[#002d80] via-[#002266] to-[#001f5c] py-16 px-4 border-t border-blue-800/80">
+    <section className="bg-gradient-to-b from-[#001f5c] via-[#001b50] to-[#001744] py-16 px-4 section-divider-top">
       <div className="max-w-4xl mx-auto text-center space-y-6 bg-[#001744]/90 border-2 border-[#ffcc00]/60 rounded-3xl p-8 md:p-12 shadow-2xl">
         <div className="inline-flex items-center gap-2 text-sm font-bold text-[#ffcc00]">
           <ShieldCheck className="w-5 h-5" />

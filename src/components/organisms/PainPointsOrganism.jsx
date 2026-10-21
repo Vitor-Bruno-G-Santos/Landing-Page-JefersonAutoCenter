@@ -19,7 +19,7 @@ export default function PainPointsOrganism({
   const pairs = comparisons || [];
 
   return (
-    <section className="bg-[#001744] py-16 md:py-20 px-4 border-t border-blue-900/50">
+    <section className="bg-gradient-to-b from-[#001f5c] to-[#001744] py-16 md:py-20 px-4 section-divider-top">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-black text-white">

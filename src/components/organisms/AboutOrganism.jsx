@@ -16,7 +16,7 @@ export default function AboutOrganism({
   ];
 
   return (
-    <section className="bg-[#001f5c] py-16 md:py-20 px-4 border-t border-blue-900/50">
+    <section className="bg-gradient-to-b from-[#001744] to-[#001f5c] py-16 md:py-20 px-4 section-divider-top">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
         {/* LADO ESQUERDO: HISTÓRIA E COMPROMISSO */}

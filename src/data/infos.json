@@ -5,7 +5,7 @@
     "logo": "./images/logo.webp",
     "foundedYear": "2009",
     "badge": "Oficina mecânica em Campo Grande - MS • 2 unidades próprias",
-    "tagline": "Você sabe o que o carro precisa e aprova cada item antes do serviço",
+    "tagline": "Oficina mecânica onde você sabe o que o carro precisa e aprova cada item antes do serviço",
     "taglineHighlight": "aprova cada item",
     "description": "Manutenção preventiva e corretiva no Jeferson Autocenter com diagnóstico computadorizado, orçamento enviado no seu WhatsApp e 90 dias de garantia por escrito.",
     "footerDescription": "Oficina mecânica multimarcas fundada em 2009 em Campo Grande - MS, estruturada em duas unidades próprias na Av. Salgado Filho e na Av. Júlio de Castilho.",
@@ -41,7 +41,7 @@
   },
   "units": [
     {
-      "name": "Unidade 1 — Salgado Filho",
+      "name": "Unidade na Salgado Filho",
       "shortName": "Salgado Filho",
       "badge": "Unidade 1",
       "address": "Av. Salgado Filho, 2057 - Vila Carvalho, Campo Grande - MS",
@@ -54,7 +54,7 @@
       "whatsapp": "https://wa.me/5567992479213?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20na%20Unidade%20Salgado%20Filho."
     },
     {
-      "name": "Unidade 2 — Júlio de Castilho",
+      "name": "Unidade na Júlio de Castilho",
       "shortName": "Júlio de Castilho",
       "badge": "Unidade 2",
       "address": "Av. Júlio de Castilho, 1636 - Vila Alba, Campo Grande - MS",
@@ -183,8 +183,8 @@
   },
   "services": {
     "title": "Serviços e manutenção automotiva",
-    "subtitle": "Aprovação prévia no WhatsApp e parcelamento em até 10x nas duas unidades.",
-    "priceDisclaimer": "*Valores de referência para veículos de passeio linha leve (ex.: óleo semissintético até 4 litros). O valor exato é confirmado após verificação da especificação da montadora para o seu veículo.",
+    "subtitle": "Aprovação prévia no WhatsApp e parcelamento em até 6x nas duas unidades.",
+    "priceDisclaimer": "*Valores de referência para veículos de passeio linha leve (ex.: óleo semissintético até 3 litros). O valor exato é confirmado após verificação da especificação da montadora para o seu veículo.",
     "specialties": [
       {
         "title": "Alinhamento e balanceamento",
@@ -220,6 +220,7 @@
         "priceValue": "R$ 205,99",
         "price": "A partir de R$ 205,99",
         "popular": false,
+        "badgeText": "Mais Barato",
         "features": [
           "Óleo lubrificante homologado na viscosidade correta",
           "Troca do filtro de óleo do motor",
@@ -228,35 +229,34 @@
         ]
       },
       {
-        "title": "Revisão preventiva completa",
+        "title": "Revisão de suspensão e troca de óleo",
         "category": "Check-up geral e segurança",
         "image": "./images/servico-injecao.webp",
         "pricePrefix": "A partir de",
-        "priceValue": "R$ 380,00",
-        "price": "A partir de R$ 380,00",
+        "priceValue": "R$ 285,99",
+        "price": "A partir de R$ 285,99",
         "popular": true,
-        "badgeText": "Mais procurado",
+        "badgeText": "Mais Procurado",
         "features": [
-          "Diagnóstico computadorizado via scanner",
-          "Inspeção de freios, discos e pastilhas",
           "Análise de suspensão, buchas e amortecedores",
-          "Verificação de correias, velas e arrefecimento",
-          "Alinhamento e balanceamento das 4 rodas"
+          "Alinhamento e balanceamento das 4 rodas",
+          "Troca do filtro de óleo do motor"
         ]
       },
       {
-        "title": "Injeção eletrônica e motor",
+        "title": "Revisão preventiva completa",
         "category": "Diagnóstico e desempenho",
         "image": "./images/servico-revisao.webp",
-        "pricePrefix": "A partir de",
-        "priceValue": "R$ 220,00",
-        "price": "A partir de R$ 220,00",
+        "pricePrefix": "Orçamento",
+        "priceValue": "Sob medida",
+        "price": "Orçamento sob medida",
         "popular": false,
+        "badgeText": "Mais Completo",
         "features": [
           "Leitura eletrônica de falhas e sensores",
-          "Limpeza e equalização de bicos injetores",
-          "Troca e calibragem de velas e cabos",
-          "Diagnóstico de consumo, falhas e cabeçote"
+          "Analise completa do sistema de freio dianteiro e traseiro",
+          "Inspeção do sistema de arrefecimento",
+          "Exame completo para sua segurança e de sua familia2"
         ]
       }
     ]
@@ -269,25 +269,29 @@
     "rating": "4.7",
     "items": [
       {
-        "name": "Carlos Eduardo Silva",
-        "role": "Cliente • Unidade 1 — Salgado Filho",
-        "date": "Set/2026",
-        "avatarColor": "bg-emerald-600",
-        "comment": "Levei meu Civic na unidade da Salgado Filho com barulho na dianteira. Identificaram na inspeção que eram apenas as bieletas e buchas da barra estabilizadora. Serviço honesto e preço justo."
+        "name": "Claudia Calixto Dos Santos",
+        "role": "Local Guide • Google",
+        "comment": "Serviço sério e confiável, preço justo, atendimento excelente, não troca o que não precisa, faz o que realmente necessita em seu veículo, não inventa problemas para que o gasto aumente, e por ser mulher sinto muito tranquilidade e confiança no serviço e peça executados."
       },
       {
-        "name": "Mariana Alencar",
-        "role": "Cliente • Unidade 2 — Júlio de Castilho",
-        "date": "Set/2026",
-        "avatarColor": "bg-purple-600",
-        "comment": "Atendimento excelente desde a recepção. Mandaram o orçamento completo e detalhado pelo WhatsApp antes de mexer no carro. Entregaram no mesmo dia dentro do horário combinado."
+        "name": "Enlil Silva",
+        "role": "Local Guide • Google",
+        "comment": "Atendimento e serviços de primeira, o proprietário acompanha todos os serviços, preço justo, qualidade e bom atendimento definem, EU RECOMENDO."
       },
       {
-        "name": "Roberto Mendes",
-        "role": "Cliente • Unidade 1 — Salgado Filho",
-        "date": "Ago/2026",
-        "avatarColor": "bg-amber-600",
-        "comment": "Faço a manutenção preventiva da minha caminhonete e do carro da minha esposa no Jeferson Autocenter há anos. Oficina organizada, alinhamento bem feito e equipe que explica tudo sem enrolação."
+        "name": "Ana Carolina Silva Matias",
+        "role": "Cliente • Google",
+        "comment": "Há 4 anos fazendo revisão no Jeferson Auto Center da Av. Júlio de Castilho. Parabéns pelo excelente atendimento e entrega de serviço! Senhor Carlos está de parabéns com a equipe!"
+      },
+      {
+        "name": "Johnes Souza",
+        "role": "Cliente • Google",
+        "comment": "Ótimo atendimento, bons técnicos, bons mecânicos , fiquei muito satisfeito levo sempre meu carro e recomendo."
+      },
+      {
+        "name": "Thaynara Fiorini",
+        "role": "Local Guide • Google",
+        "comment": "Serviço excepcional! Desde a recepção até a execução do trabalho, o atendimento da Oficina Jeferson foi impecável. Fui recebida com atenção, transparência e muito profissionalismo. A equipe demonstra conhecimento, cuidado e respeito pelo cliente. Saí extremamente satisfeita com o serviço prestado. Super recomendo!"
       }
     ]
   },
@@ -313,7 +317,7 @@
       },
       {
         "q": "Quais são as formas de pagamento aceitas?",
-        "a": "Aceitamos cartões de crédito com parcelamento em até 10x, cartões de débito, PIX e dinheiro."
+        "a": "Aceitamos cartões de crédito com parcelamento em até 6x, cartões de débito, PIX e dinheiro."
       },
       {
         "q": "Como funciona a aprovação do orçamento pelo WhatsApp?",

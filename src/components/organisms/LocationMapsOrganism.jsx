@@ -17,7 +17,7 @@ export default function LocationMapsOrganism({ units = [] }) {
 
 
   return (
-    <section id="unidades" className="bg-[#001744] py-16 md:py-20 px-4 border-t border-blue-900/50">
+    <section id="unidades" className="bg-gradient-to-b from-[#002875] via-[#001f5c] to-[#001744] py-16 md:py-20 px-4 section-divider-top">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-4xl font-black text-white">

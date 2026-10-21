@@ -9,7 +9,7 @@ export default function FooterOrganism({
   company = { name: '', footerDescription: '', description: '', city: '', cnpj: '', hours: '' }
 }) {
   return (
-    <footer className="bg-[#001744] text-gray-200 border-t border-blue-900/80 pt-14 pb-24 md:pb-10 px-4">
+    <footer className="bg-gradient-to-b from-[#001744] to-[#000f2e] text-gray-200 section-divider-top pt-14 pb-24 md:pb-10 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 mb-10">
         
         <div className="md:col-span-4 space-y-4">

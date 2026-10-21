@@ -11,7 +11,7 @@ export default function BenefitsOrganism({
   const icons = [Cpu, ShieldCheck, Clock, Car, Users];
 
   return (
-    <section className="bg-[#002d80] py-16 px-4 border-t border-blue-900/50">
+    <section className="bg-gradient-to-b from-[#002d80] via-[#00266e] to-[#001f5c] py-16 px-4 section-divider-top">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-black text-white">

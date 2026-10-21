@@ -13,7 +13,7 @@ export default function HowItWorksOrganism({
   const icons = [MessageSquare, Cpu, FileText, ShieldCheck];
 
   return (
-    <section id="como-funciona" className="bg-[#002d80] text-white py-16 md:py-20 px-4 border-t border-blue-900/50">
+    <section id="como-funciona" className="bg-gradient-to-b from-[#001744] via-[#001f5c] to-[#002d80] text-white py-16 md:py-20 px-4 section-divider-top">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-2xl md:text-4xl font-black text-white">
@@ -51,16 +51,6 @@ export default function HowItWorksOrganism({
               </div>
             );
           })}
-        </div>
-
-        <div className="text-center">
-          <WhatsAppModalOrganism
-            units={units}
-            buttonLabel={ctaLabel}
-            variant="primary"
-            size="lg"
-            iconClassName="w-5 h-5 mr-2"
-          />
         </div>
       </div>
     </section>
