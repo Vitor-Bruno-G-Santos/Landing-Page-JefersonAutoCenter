@@ -4,11 +4,11 @@
     "shortName": "Jeferson",
     "logo": "./images/logo.webp",
     "foundedYear": "2009",
-    "badge": "Oficina mecânica em Campo Grande - MS • 2 unidades próprias",
+    "badge": "Oficina mecânica em Campo Grande - MS • 2 unidades",
     "tagline": "Oficina mecânica onde você sabe o que o carro precisa e aprova cada item antes do serviço",
-    "taglineHighlight": "aprova cada item",
+    "taglineHighlight": "sabe o que o carro precisa",
     "description": "Manutenção preventiva e corretiva no Jeferson Autocenter com diagnóstico computadorizado, orçamento enviado no seu WhatsApp e 90 dias de garantia por escrito.",
-    "footerDescription": "Oficina mecânica multimarcas fundada em 2009 em Campo Grande - MS, estruturada em duas unidades próprias na Av. Salgado Filho e na Av. Júlio de Castilho.",
+    "footerDescription": "Oficina mecânica multimarcas fundada em 2009 em Campo Grande - MS, estruturada em duas unidades  na Av. Salgado Filho e na Av. Júlio de Castilho.",
     "fullDescription": "Fundado em 2009 em Campo Grande - MS, o Jeferson Autocenter soma mais de 17 anos de atuação com foco em diagnóstico técnico preciso e transparência: o cliente recebe a avaliação detalhada e o orçamento discriminado antes de autorizar qualquer manutenção.",
     "experienceYears": "17",
     "cnpj": "Consulte na unidade",
@@ -77,7 +77,7 @@
     "title": "Por que escolher o Jeferson Autocenter?",
     "items": [
       "Aprovação prévia: você confere o orçamento detalhado no WhatsApp antes de autorizar o serviço.",
-      "2 unidades próprias: Av. Salgado Filho e Av. Júlio de Castilho.",
+      "2 unidades: Av. Salgado Filho e Av. Júlio de Castilho.",
       "Garantia de 90 dias por escrito em peças e mão de obra na ordem de serviço."
     ]
   },

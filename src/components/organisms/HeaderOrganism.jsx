@@ -30,7 +30,7 @@ export default function HeaderOrganism({ whatsappLink = '#', units = [], contact
 
         <div className="flex items-center gap-3">
           <div className="hidden sm:block">
-            <WhatsAppModalOrganism units={units} buttonLabel="Agendar pelo WhatsApp" variant="primary" size="sm" />
+            <WhatsAppModalOrganism units={units} buttonLabel="Agendar pelo WhatsApp" variant="header" size="sm" />
           </div>
 
           <button
@@ -58,7 +58,7 @@ export default function HeaderOrganism({ whatsappLink = '#', units = [], contact
             </a>
           ))}
           <div className="pt-2 sm:hidden">
-            <WhatsAppModalOrganism units={units} buttonLabel="Agendar pelo WhatsApp" variant="primary" size="sm" className="w-full justify-center" />
+            <WhatsAppModalOrganism units={units} buttonLabel="Agendar pelo WhatsApp" variant="header" size="sm" className="w-full justify-center" />
           </div>
         </nav>
       )}

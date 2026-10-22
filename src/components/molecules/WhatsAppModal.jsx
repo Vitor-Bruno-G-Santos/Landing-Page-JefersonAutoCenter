@@ -41,10 +41,6 @@ export default function WhatsAppModal({ units = [], onSelect, onClose }) {
 
         {/* Cabeçalho */}
         <div className="mb-6 pr-10">
-          <span className="inline-flex items-center gap-1.5 bg-[#ffcc00]/20 text-[#ffcc00] text-xs font-bold px-3 py-1 rounded-full uppercase border border-[#ffcc00]/30 mb-3">
-            <WhatsAppIcon className="w-3.5 h-3.5" />
-            Atendimento Rápido
-          </span>
           <h2 id="whatsapp-modal-title" className="text-2xl md:text-3xl font-black text-white leading-tight">
             Escolha a <span className="text-[#ffcc00]">Unidade</span>
           </h2>
