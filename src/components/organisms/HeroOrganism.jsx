@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import StarRating from '../atoms/StarRating';
 import WhatsAppModalOrganism from './WhatsAppModalOrganism';
 import { Phone } from 'lucide-react';
@@ -15,6 +15,34 @@ export default function HeroOrganism({
   cta = {},
   socialProof = {}
 }) {
+  const [videoSrc, setVideoSrc] = useState('');
+  const [videoReady, setVideoReady] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const loadVideo = () => {
+      const schedule = typeof window !== 'undefined' && 'requestIdleCallback' in window
+        ? window.requestIdleCallback
+        : (cb) => setTimeout(cb, 1000);
+
+      schedule(() => {
+        const url = assetUrl("videos/hero_video.mp4");
+        setVideoSrc(url);
+        if (videoRef.current) {
+          videoRef.current.load();
+          videoRef.current.play().catch(() => {});
+        }
+      });
+    };
+
+    if (document.readyState === 'complete') {
+      loadVideo();
+    } else {
+      window.addEventListener('load', loadVideo, { once: true });
+      return () => window.removeEventListener('load', loadVideo);
+    }
+  }, []);
+
   const highlight = company.taglineHighlight || 'o que o carro precisa';
   const tagline = company.tagline || '';
   const parts = tagline.includes(highlight)
@@ -22,23 +50,31 @@ export default function HeroOrganism({
     : [tagline, ''];
 
   return (
-    <section className="relative bg-[#001744] py-16 sm:py-24 md:py-28 lg:py-32 px-4 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-[#002d80] via-[#001f5c] to-[#001744] py-16 sm:py-24 md:py-28 lg:py-32 px-4 overflow-hidden">
       {/* Vídeo de fundo da oficina (sem som, loop contínuo) */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden bg-gradient-to-b from-[#002d80] via-[#001f5c] to-[#001744]">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
-          preload="auto"
-          poster={assetUrl("images/oficina-hero.webp")}
-          className="w-full h-full object-cover object-center"
+          preload="none"
+          onPlaying={() => setVideoReady(true)}
+          onLoadedData={() => setVideoReady(true)}
+          className={`w-full h-full object-cover object-center transition-opacity duration-1000 ${
+            videoReady ? 'opacity-100' : 'opacity-0'
+          }`}
         >
-          <source src={assetUrl("videos/hero_video.mp4")} type="video/mp4" />
+          {videoSrc && <source src={videoSrc} type="video/mp4" />}
         </video>
-        {/* Overlay translúcido para evidenciar o vídeo com boa nitidez */}
-        <div className="absolute inset-0 bg-[#001744]/40" />
-        {/* Esmaecimento apenas na base para transição com a próxima seção */}
+        {/* Overlay translúcido para evidenciar o vídeo com boa nitidez quando estiver rodando */}
+        <div
+          className={`absolute inset-0 bg-[#001744]/40 transition-opacity duration-1000 ${
+            videoReady ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+        {/* Esmaecimento na base para transição suave com a próxima seção */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#001f5c]" />
       </div>
 
