@@ -2,6 +2,7 @@
 import React from 'react';
 import { MapPin, CheckCircle2 } from 'lucide-react';
 import { highlightBrand } from '../../utils/highlightBrand';
+import { assetUrl } from '../../utils/assetPath';
 
 export default function AboutOrganism({ 
   about = {},
@@ -11,8 +12,8 @@ export default function AboutOrganism({
   const { subtitle = '', title = '', values = [] } = about;
   const { name = '', fullDescription = '' } = company;
   const unitImages = [
-    './images/unidade-salgado-filho.webp',
-    './images/unidade-julio-castilho.webp'
+    assetUrl('images/unidade-salgado-filho.webp'),
+    assetUrl('images/unidade-julio-castilho.webp')
   ];
 
   return (

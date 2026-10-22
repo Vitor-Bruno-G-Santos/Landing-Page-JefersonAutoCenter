@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import companyData from '../data/infos.json';
+import { assetUrl } from '../utils/assetPath';
 
 interface Props {
 	title?: string;
@@ -43,15 +44,15 @@ const schemaData = {
 		<meta charset="UTF-8" />
 		<meta name="description" content={companyData.company.description} />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
-		<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+		<link rel="icon" type="image/svg+xml" href={assetUrl("favicon.svg")} />
+		<link rel="icon" type="image/x-icon" href={assetUrl("favicon.ico")} />
+		<link rel="apple-touch-icon" href={assetUrl("apple-touch-icon.png")} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<script is:inline>
 			document.documentElement.classList.add('js');
 		</script>
-		<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href={assetUrl("fonts/inter-latin-wght-normal.woff2")} as="font" type="font/woff2" crossorigin>
 		<script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
 	</head>
 	<body class="bg-[#001f5c] text-gray-100 font-sans antialiased">

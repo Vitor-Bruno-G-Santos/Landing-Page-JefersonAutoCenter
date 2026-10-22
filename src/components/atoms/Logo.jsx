@@ -1,15 +1,17 @@
 "use client";
 import React, { useState } from 'react';
+import { assetUrl } from '../../utils/assetPath';
 
 export default function Logo({
   className = "",
-  src = "./images/logo.webp",
+  src = "images/logo.webp",
   alt = "Jeferson Autocenter",
   showBox = true,
   textOnly = false,
   ...props
 }) {
   const [imageFailed, setImageFailed] = useState(false);
+  const resolvedSrc = assetUrl(src);
 
   if (textOnly) {
     return (
@@ -23,16 +25,16 @@ export default function Logo({
     <a href="#" className={`inline-flex items-center gap-3 ${className}`} {...props}>
       {!imageFailed ? (
         <img
-          src={src}
+          src={resolvedSrc}
           alt={alt}
           width="200"
           height="48"
           decoding="async"
           className="h-10 md:h-12 w-auto max-w-[190px] md:max-w-[240px] object-contain transition-transform hover:scale-105"
           onError={(e) => {
-            if ((src === "/images/logo.webp" || src === "./images/logo.webp") && !e.currentTarget.dataset.retried) {
+            if (!e.currentTarget.dataset.retried) {
               e.currentTarget.dataset.retried = "true";
-              e.currentTarget.src = "./images/logo.png";
+              e.currentTarget.src = assetUrl("images/logo.png");
             } else {
               setImageFailed(true);
             }

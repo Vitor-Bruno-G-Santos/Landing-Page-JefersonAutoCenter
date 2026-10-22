@@ -5,6 +5,7 @@ import StarRating from '../atoms/StarRating';
 import WhatsAppModalOrganism from './WhatsAppModalOrganism';
 import { MapPin, ShieldCheck, CheckCircle2, Phone } from 'lucide-react';
 import { highlightBrand } from '../../utils/highlightBrand';
+import { assetUrl, assetSrcSet } from '../../utils/assetPath';
 
 export default function HeroOrganism({ 
   whatsappLink = '#',
@@ -80,8 +81,8 @@ export default function HeroOrganism({
           <div className="relative bg-[#001f5c] border border-blue-800/80 rounded-3xl overflow-hidden shadow-2xl">
             <div className="relative h-60 sm:h-68 w-full bg-[#001744]">
               <img
-                src="./images/oficina-hero.webp"
-                srcSet="./images/oficina-hero-540.webp 540w, ./images/oficina-hero.webp 640w"
+                src={assetUrl("images/oficina-hero.webp")}
+                srcSet={assetSrcSet("images/oficina-hero-540.webp 540w, images/oficina-hero.webp 640w")}
                 sizes="(max-width: 640px) 100vw, 540px"
                 alt="Diagnóstico automotivo no Jeferson Autocenter em Campo Grande - MS"
                 width="640"

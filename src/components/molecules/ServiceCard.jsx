@@ -1,6 +1,7 @@
 import React from 'react';
 import { CheckCircle2, Wrench } from 'lucide-react';
 import WhatsAppModalOrganism from '../organisms/WhatsAppModalOrganism';
+import { assetUrl } from '../../utils/assetPath';
 
 export default function ServiceCard({
   title,
@@ -35,7 +36,7 @@ export default function ServiceCard({
         <div className="relative h-52 w-full bg-[#001744] overflow-hidden">
           {image ? (
             <img
-              src={image}
+              src={assetUrl(image)}
               alt={`${title} - Jeferson Autocenter`}
               width="400"
               height="240"
