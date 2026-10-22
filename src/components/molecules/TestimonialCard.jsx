@@ -8,7 +8,7 @@ export default function TestimonialCard({
   rating = 5
 }) {
   return (
-    <div className="h-full bg-[#001f5c] p-6 rounded-2xl border border-blue-800/80 shadow-xl flex flex-col justify-between hover:border-[#ffcc00]/50 transition-all select-none">
+    <div className="h-full bg-[#001f5c] p-6 rounded-md border border-blue-800/80 shadow-xl flex flex-col justify-between hover:border-[#ffcc00]/50 transition-all select-none">
       <div>
         <div className="mb-4">
           <h3 className="font-bold text-white text-base leading-tight">{name}</h3>

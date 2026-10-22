@@ -45,7 +45,7 @@ export default function PainPointsOrganism({
               key={idx}
               className="grid grid-cols-1 md:grid-cols-2 gap-4 items-stretch"
             >
-              <div className="bg-[#141824] border border-rose-400/25 rounded-2xl p-5 flex items-start gap-3.5 text-gray-200 text-base">
+              <div className="bg-[#141824] border border-rose-400/25 rounded-md p-5 flex items-start gap-3.5 text-gray-200 text-base">
                 <span className="bg-rose-500/15 text-rose-400 p-1.5 rounded-lg shrink-0 mt-0.5">
                   <XCircle className="w-5 h-5" />
                 </span>
@@ -57,7 +57,7 @@ export default function PainPointsOrganism({
                 </div>
               </div>
 
-              <div className="bg-[#001f5c] border-2 border-[#ffcc00]/70 rounded-2xl p-5 flex items-start gap-3.5 text-white text-base shadow-lg">
+              <div className="bg-[#001f5c] border-2 border-[#ffcc00]/70 rounded-md p-5 flex items-start gap-3.5 text-white text-base shadow-lg">
                 <span className="bg-[#ffcc00]/20 text-[#ffcc00] p-1.5 rounded-lg shrink-0 mt-0.5">
                   <CheckCircle2 className="w-5 h-5" />
                 </span>

@@ -53,7 +53,7 @@ export default function AboutOrganism({
           ]).map((unit, idx) => (
             <div
               key={idx}
-              className="bg-[#001744] rounded-2xl overflow-hidden border border-blue-800/80 shadow-xl flex flex-col"
+              className="bg-[#001744] rounded-md overflow-hidden border border-blue-800/80 shadow-xl flex flex-col"
             >
               <div className="relative h-48 w-full bg-[#001233]">
                 <img

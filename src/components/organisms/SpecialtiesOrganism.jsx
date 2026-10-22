@@ -13,7 +13,7 @@ export default function SpecialtiesOrganism({
   if (!specialties || specialties.length === 0) return null;
 
   const content = (
-    <div className={`bg-[#001f5c] border border-blue-800/80 rounded-3xl p-6 md:p-8 ${className}`}>
+    <div className={`bg-[#001f5c] border border-blue-800/80 rounded-md p-6 md:p-8 ${className}`}>
       <div className="mb-6">
         <h3 className="text-xl md:text-2xl font-extrabold text-white">
           {highlightBrand(title)}

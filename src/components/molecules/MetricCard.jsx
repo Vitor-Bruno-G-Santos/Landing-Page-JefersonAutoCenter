@@ -129,7 +129,7 @@ export default function MetricCard({ number, label, delay = 0 }) {
   return (
     <div 
       ref={cardRef}
-      className="reveal-card text-center p-4 bg-[#001f5c] border border-blue-800/70 rounded-2xl shadow-md"
+      className="reveal-card text-center p-4 bg-[#001f5c] border border-blue-800/70 rounded-md shadow-md"
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
     >
       <div className="text-2xl md:text-3xl font-black text-[#ffcc00] mb-1 tabular-nums">

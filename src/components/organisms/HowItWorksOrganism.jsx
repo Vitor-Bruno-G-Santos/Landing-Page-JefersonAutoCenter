@@ -88,12 +88,12 @@ export default function HowItWorksOrganism({
 
             {/* CARD 1 (Posição Alta: top-0, left-[60px]) */}
             <div 
-              className="reveal-card absolute left-[60px] top-0 w-[260px] h-[380px] bg-[#001f5c] border border-blue-600/40 rounded-3xl p-6 shadow-2xl flex flex-col justify-between z-10"
+              className="reveal-card absolute left-[60px] top-0 w-[260px] h-[380px] bg-[#001f5c] border border-blue-600/40 rounded-md p-6 shadow-2xl flex flex-col justify-between z-10"
               style={{ transitionDelay: '0ms' }}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
+                  <div className="w-12 h-12 rounded-md bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
                     <MessageSquare className="w-6 h-6" />
                   </div>
                   <span className="text-lg font-black text-[#ffcc00]">
@@ -115,12 +115,12 @@ export default function HowItWorksOrganism({
 
             {/* CARD 2 (Posição Baixa: top-[100px], left-[360px]) */}
             <div 
-              className="reveal-card absolute left-[360px] top-[100px] w-[260px] h-[380px] bg-[#001f5c] border border-blue-600/40 rounded-3xl p-6 shadow-2xl flex flex-col justify-between z-10"
+              className="reveal-card absolute left-[360px] top-[100px] w-[260px] h-[380px] bg-[#001f5c] border border-blue-600/40 rounded-md p-6 shadow-2xl flex flex-col justify-between z-10"
               style={{ transitionDelay: '150ms' }}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
+                  <div className="w-12 h-12 rounded-md bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
                     <Cpu className="w-6 h-6" />
                   </div>
                   <span className="text-lg font-black text-[#ffcc00]">
@@ -142,12 +142,12 @@ export default function HowItWorksOrganism({
 
             {/* CARD 3 (Posição Alta: top-0, left-[660px]) */}
             <div 
-              className="reveal-card absolute left-[660px] top-0 w-[260px] h-[380px] bg-[#001f5c] border border-blue-600/40 rounded-3xl p-6 shadow-2xl flex flex-col justify-between z-10"
+              className="reveal-card absolute left-[660px] top-0 w-[260px] h-[380px] bg-[#001f5c] border border-blue-600/40 rounded-md p-6 shadow-2xl flex flex-col justify-between z-10"
               style={{ transitionDelay: '300ms' }}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
+                  <div className="w-12 h-12 rounded-md bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
                     <FileText className="w-6 h-6" />
                   </div>
                   <span className="text-lg font-black text-[#ffcc00]">
@@ -169,12 +169,12 @@ export default function HowItWorksOrganism({
 
             {/* CARD 4 (Posição Baixa: top-[100px], left-[960px]) */}
             <div 
-              className="reveal-card absolute left-[960px] top-[100px] w-[260px] h-[380px] bg-[#001f5c] border border-blue-600/40 rounded-3xl p-6 shadow-2xl flex flex-col justify-between z-10"
+              className="reveal-card absolute left-[960px] top-[100px] w-[260px] h-[380px] bg-[#001f5c] border border-blue-600/40 rounded-md p-6 shadow-2xl flex flex-col justify-between z-10"
               style={{ transitionDelay: '450ms' }}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-2xl bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
+                  <div className="w-12 h-12 rounded-md bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
                   <span className="text-lg font-black text-[#ffcc00]">
@@ -210,11 +210,11 @@ export default function HowItWorksOrganism({
                 <div className="absolute -left-[30px] sm:-left-[32px] top-6 w-5 h-5 rounded-full bg-[#ffcc00] border-4 border-[#001744] z-10 shadow-md" />
 
                 <div 
-                  className="reveal-card bg-[#001f5c] border border-blue-600/40 rounded-2xl p-5 sm:p-6 shadow-xl"
+                  className="reveal-card bg-[#001f5c] border border-blue-600/40 rounded-md p-5 sm:p-6 shadow-xl"
                   style={{ transitionDelay: `${idx * 100}ms` }}
                 >
                   <div className="flex items-center justify-between mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
+                    <div className="w-10 h-10 rounded-md bg-[#ffcc00] text-gray-950 flex items-center justify-center font-black shadow-md">
                       <Icon className="w-5 h-5" />
                     </div>
                     <span className="text-xs font-black tracking-widest text-blue-300 uppercase bg-blue-950/60 px-3 py-1 rounded-full border border-blue-800">

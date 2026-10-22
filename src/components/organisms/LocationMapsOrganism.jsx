@@ -54,7 +54,7 @@ export default function LocationMapsOrganism({ units = [] }) {
         </div>
 
         {/* CONTEÚDO DO MAPA E DETALHES */}
-        <div id="unit-tabpanel" role="tabpanel" aria-labelledby={`unit-tab-${activeTab}`} className="reveal-card grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-[#001f5c] p-6 md:p-8 rounded-3xl border border-blue-900 shadow-2xl">
+        <div id="unit-tabpanel" role="tabpanel" aria-labelledby={`unit-tab-${activeTab}`} className="reveal-card grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch bg-[#001f5c] p-6 md:p-8 rounded-md border border-blue-900 shadow-2xl">
           
           {/* DETALHES DA UNIDADE */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
@@ -104,7 +104,7 @@ export default function LocationMapsOrganism({ units = [] }) {
           </div>
 
           {/* MAPA GOOGLE EMBED */}
-          <div className="lg:col-span-7 h-[350px] lg:h-auto rounded-2xl overflow-hidden border-2 border-blue-800 shadow-inner">
+          <div className="lg:col-span-7 h-[350px] lg:h-auto rounded-md overflow-hidden border-2 border-blue-800 shadow-inner">
             <iframe
               key={activeTab}
               title={`Mapa ${currentUnit.name}`}

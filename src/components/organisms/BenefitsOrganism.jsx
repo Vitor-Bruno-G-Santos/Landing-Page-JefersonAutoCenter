@@ -28,10 +28,10 @@ export default function BenefitsOrganism({
             return (
               <div 
                 key={index} 
-                className="reveal-card w-full md:w-[calc(33.333%-1rem)] bg-[#001f5c] p-6 rounded-2xl border border-blue-900/60 shadow-lg"
+                className="reveal-card w-full md:w-[calc(33.333%-1rem)] bg-[#001f5c] p-6 rounded-md border border-blue-900/60 shadow-lg"
                 style={{ transitionDelay: `${(index % 3) * 120}ms` }}
               >
-                <div className="w-12 h-12 bg-[#ffcc00] text-gray-900 rounded-xl flex items-center justify-center mb-4 font-black">
+                <div className="w-12 h-12 bg-[#ffcc00] text-gray-900 rounded-md flex items-center justify-center mb-4 font-black">
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">{b.title}</h3>

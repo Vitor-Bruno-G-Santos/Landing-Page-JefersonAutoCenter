@@ -27,7 +27,7 @@ export default function ServiceCard({
   return (
     <div
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
-      className={`reveal-card relative bg-[#001f5c] rounded-2xl overflow-hidden transition-all flex flex-col justify-between shadow-lg hover:shadow-2xl border-2 ${
+      className={`reveal-card relative bg-[#001f5c] rounded-md overflow-hidden transition-all flex flex-col justify-between shadow-lg hover:shadow-2xl border-2 ${
         popular
           ? 'border-[#ffcc00] ring-4 ring-[#ffcc00]/15 order-first md:order-none'
           : 'border-blue-900/70 hover:border-blue-700'
@@ -62,7 +62,7 @@ export default function ServiceCard({
         <div className="p-6 pb-4">
           <h3 className="text-xl font-extrabold text-white mb-4">{title}</h3>
 
-          <div className="bg-[#001744]/90 border border-blue-800/80 rounded-xl px-4 py-3 mb-5 flex items-center justify-between gap-3">
+          <div className="bg-[#001744]/90 border border-blue-800/80 rounded-md px-4 py-3 mb-5 flex items-center justify-between gap-3">
             <span className="text-xs font-semibold text-gray-300">
               Valor de referência*
             </span>

@@ -67,7 +67,7 @@ export default function HeroOrganism({
           />
           <a
             href="#unidades"
-            className="w-full sm:w-auto inline-flex items-center justify-center font-bold rounded-lg px-6 py-4 text-base border-2 border-blue-400/50 text-white hover:border-[#ffcc00] hover:text-[#ffcc00] bg-[#001f5c]/70 hover:bg-[#001f5c] transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center font-bold rounded-xl px-6 py-4 text-base border-2 border-blue-400/50 text-white hover:border-[#ffcc00] hover:text-[#ffcc00] bg-[#001f5c]/70 hover:bg-[#001f5c] transition-all"
           >
             <Phone className="w-5 h-5 mr-2 text-[#ffcc00]" />
             <span>Ligar ou ver unidades</span>

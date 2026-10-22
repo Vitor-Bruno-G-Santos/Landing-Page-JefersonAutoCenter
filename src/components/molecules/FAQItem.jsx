@@ -7,7 +7,7 @@ export default function FAQItem({ id, question, answer, isOpen, onToggle, delay 
 
   return (
     <div 
-      className="reveal-card bg-[#001f5c] border border-blue-900/60 rounded-xl overflow-hidden transition-all"
+      className="reveal-card bg-[#001f5c] border border-blue-900/60 rounded-md overflow-hidden transition-all"
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
     >
       <button

@@ -39,7 +39,7 @@ export default function HeaderOrganism({ whatsappLink = '#', units = [], contact
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-expanded={mobileMenuOpen}
               aria-label={mobileMenuOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação'}
-              className="md:hidden p-2 rounded-lg bg-[#001f5c] border border-blue-800 text-gray-200 hover:text-[#ffcc00]"
+              className="md:hidden p-2 rounded-xl bg-[#001f5c] border border-blue-800 text-gray-200 hover:text-[#ffcc00]"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>

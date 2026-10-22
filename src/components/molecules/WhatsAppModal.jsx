@@ -26,7 +26,7 @@ export default function WhatsAppModal({ units = [], onSelect, onClose }) {
       aria-labelledby="whatsapp-modal-title"
     >
       <div
-        className="relative bg-[#001f5c] border-2 border-[#ffcc00]/40 rounded-3xl p-6 md:p-8 w-full max-w-lg shadow-2xl overflow-hidden"
+        className="relative bg-[#001f5c] border-2 border-[#ffcc00]/40 rounded-md p-6 md:p-8 w-full max-w-lg shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Botão Fechar */}
@@ -56,7 +56,7 @@ export default function WhatsAppModal({ units = [], onSelect, onClose }) {
               <button
                 type="button"
                 onClick={() => onSelect(unit.whatsapp)}
-                className="group w-full text-left p-4 bg-[#002d80] hover:bg-[#002266] border border-blue-800 hover:border-[#ffcc00] rounded-2xl transition-all flex items-center justify-between gap-4 shadow-md hover:shadow-xl cursor-pointer"
+                className="group w-full text-left p-4 bg-[#002d80] hover:bg-[#002266] border border-blue-800 hover:border-[#ffcc00] rounded-md transition-all flex items-center justify-between gap-4 shadow-md hover:shadow-xl cursor-pointer"
               >
                 <div className="space-y-1.5 min-w-0">
                   {unit.badge && (
