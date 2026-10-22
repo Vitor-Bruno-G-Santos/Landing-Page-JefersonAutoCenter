@@ -15,7 +15,8 @@ export default function ServiceCard({
   badgeVariant,
   ctaLabel = 'Agendar Diagnóstico pelo WhatsApp',
   units = [],
-  delay = 0
+  delay = 0,
+  className = ''
 }) {
   const displayValue = priceValue || (price ? price.replace(/^A partir de\s*/i, '') : '');
 
@@ -28,9 +29,9 @@ export default function ServiceCard({
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
       className={`reveal-card relative bg-[#001f5c] rounded-2xl overflow-hidden transition-all flex flex-col justify-between shadow-lg hover:shadow-2xl border-2 ${
         popular
-          ? 'border-[#ffcc00] ring-4 ring-[#ffcc00]/15'
+          ? 'border-[#ffcc00] ring-4 ring-[#ffcc00]/15 order-first md:order-none'
           : 'border-blue-900/70 hover:border-blue-700'
-      }`}
+      } ${className}`}
     >
       <div>
         <div className="relative h-52 w-full bg-[#001744] overflow-hidden">

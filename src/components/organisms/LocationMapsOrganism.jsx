@@ -59,9 +59,6 @@ export default function LocationMapsOrganism({ units = [] }) {
           {/* DETALHES DA UNIDADE */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
             <div>
-              <span className="bg-[#ffcc00]/20 text-[#ffcc00] text-xs font-bold px-3 py-1 rounded-full uppercase border border-[#ffcc00]/30">
-                {currentUnit.badge}
-              </span>
               <h3 className="text-2xl font-extrabold text-white mt-3 mb-2">{highlightBrand(currentUnit.name)}</h3>
               <p className="text-gray-300 text-sm flex items-start gap-2 mb-4">
                 <MapPin className="w-5 h-5 text-[#ffcc00] shrink-0 mt-0.5" />
