@@ -4,7 +4,7 @@ import HeaderOrganism from '../components/organisms/HeaderOrganism';
 import HeroOrganism from '../components/organisms/HeroOrganism';
 import MetricsBarOrganism from '../components/organisms/MetricsBarOrganism';
 import HowItWorksOrganism from '../components/organisms/HowItWorksOrganism';
-import BenefitsOrganism from '../components/organisms/BenefitsOrganism';
+import CompanyPhotosOrganism from '../components/organisms/CompanyPhotosOrganism';
 import ServicesPricingOrganism from '../components/organisms/ServicesPricingOrganism';
 import TestimonialsOrganism from '../components/organisms/TestimonialsOrganism';
 import LocationMapsOrganism from '../components/organisms/LocationMapsOrganism';
@@ -22,7 +22,7 @@ const {
   testimonials,
   metrics,
   faqs,
-  benefits,
+  gallery,
   about,
   company,
   socialProof,
@@ -33,9 +33,7 @@ const {
   testimonialsTitle,
   testimonialsSubtitle,
   faqTitle,
-  faqSubtitle,
-  benefitsTitle,
-  benefitsSubtitle
+  faqSubtitle
 } = {
   whatsappLink: companyData.contact.whatsapp + '?text=' + encodeURIComponent(companyData.contact.whatsappMessage),
   units: companyData.units,
@@ -44,7 +42,7 @@ const {
   testimonials: companyData.testimonials.items,
   metrics: companyData.metrics.items,
   faqs: companyData.faq.items,
-  benefits: companyData.benefits.items,
+  gallery: companyData.gallery,
   about: companyData.about,
   company: companyData.company,
   contact: companyData.contact,
@@ -55,9 +53,7 @@ const {
   testimonialsTitle: companyData.testimonials.title,
   testimonialsSubtitle: companyData.testimonials.subtitle,
   faqTitle: companyData.faq.title,
-  faqSubtitle: companyData.faq.subtitle,
-  benefitsTitle: companyData.benefits.title,
-  benefitsSubtitle: companyData.benefits.subtitle
+  faqSubtitle: companyData.faq.subtitle
 };
 ---
 
@@ -82,7 +78,7 @@ const {
       units={units}
       ctaLabel={cta.primary}
     />
-    <BenefitsOrganism benefits={benefits} benefitsTitle={benefitsTitle} benefitsSubtitle={benefitsSubtitle} />
+    <CompanyPhotosOrganism client:visible gallery={gallery} />
     <ServicesPricingOrganism 
       client:visible
       whatsappLink={whatsappLink} 

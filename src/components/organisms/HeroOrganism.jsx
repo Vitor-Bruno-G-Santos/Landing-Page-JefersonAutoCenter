@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import StarRating from '../atoms/StarRating';
 import WhatsAppModalOrganism from './WhatsAppModalOrganism';
-import { Phone } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 import { highlightBrand } from '../../utils/highlightBrand';
 import { assetUrl } from '../../utils/assetPath';
 
@@ -105,8 +105,8 @@ export default function HeroOrganism({
             href="#unidades"
             className="w-full sm:w-auto inline-flex items-center justify-center font-bold rounded-xl px-6 py-4 text-base border-2 border-blue-400/50 text-white hover:border-[#ffcc00] hover:text-[#ffcc00] bg-[#001f5c]/70 hover:bg-[#001f5c] transition-all"
           >
-            <Phone className="w-5 h-5 mr-2 text-[#ffcc00]" />
-            <span>Ligar ou ver unidades</span>
+            <MapPin className="w-5 h-5 mr-2 text-[#ffcc00]" />
+            <span>Ver unidades</span>
           </a>
         </div>
 

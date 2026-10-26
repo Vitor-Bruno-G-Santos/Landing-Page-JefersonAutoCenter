@@ -133,6 +133,17 @@
       }
     ]
   },
+  "gallery": {
+    "title": "Conheça a estrutura do Jeferson Autocenter",
+    "items": [
+      "./images/unidade-salgado-filho.webp",
+      "./images/unidade-julio-castilho.webp",
+      "./images/oficina-hero.webp",
+      "./images/servico-injecao.webp",
+      "./images/servico-oleo.webp",
+      "./images/servico-revisao.webp"
+    ]
+  },
   "painPoints": {
     "title": "Comparativo: oficinas comuns vs. padrão Jeferson Autocenter",
     "subtitle": "Veja como eliminamos as principais dores de cabeça na manutenção do seu carro.",

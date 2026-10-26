@@ -77,7 +77,7 @@ export default function FooterOrganism({
       <div className="max-w-7xl mx-auto border-t border-blue-900/50 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300 gap-4">
         <p>© {new Date().getFullYear()} {company.name}. Todos os direitos reservados.</p>
         <p className="text-center md:text-right">
-          {company.city} • Privacidade e LGPD: este site não utiliza cookies de rastreamento invasivos; mapas externos só são carregados mediante clique.
+          {company.city}
         </p>
       </div>
     </footer>

@@ -9,6 +9,7 @@ export default function HeaderOrganism({ whatsappLink = '#', units = [], contact
 
   const navLinks = [
     { href: '#como-funciona', label: 'Como funciona' },
+    { href: '#fotos', label: 'Fotos' },
     { href: '#servicos', label: 'Serviços' },
     { href: '#avaliacoes', label: 'Avaliações' },
     { href: '#unidades', label: 'Unidades' },
