@@ -199,13 +199,16 @@ export default function HowItWorksOrganism({
 
         {/* TIMELINE MOBILE / TABLET (Vertical contínua) */}
         <div className="lg:hidden max-w-lg mx-auto relative pl-8 sm:pl-10 space-y-8">
-          {/* Linha vertical contínua */}
-          <div className="absolute left-3.5 sm:left-4 top-4 bottom-8 w-[6px] bg-[#67b0e8] rounded-full -translate-x-1/2" />
-
           {(steps || []).map((item, idx) => {
             const Icon = icons[idx] || ShieldCheck;
+            const isLast = idx === steps.length - 1;
             return (
               <div key={idx} className="relative">
+                {/* Segmento da linha vertical (do centro desta bola até o centro da próxima) */}
+                {!isLast && (
+                  <div className="absolute -left-[23px] sm:-left-[25px] top-[34px] -bottom-[66px] w-[6px] bg-[#67b0e8]" />
+                )}
+
                 {/* Ponto Amarelo indicador na linha vertical */}
                 <div className="absolute -left-[30px] sm:-left-[32px] top-6 w-5 h-5 rounded-full bg-[#ffcc00] border-4 border-[#001744] z-10 shadow-md" />
 
