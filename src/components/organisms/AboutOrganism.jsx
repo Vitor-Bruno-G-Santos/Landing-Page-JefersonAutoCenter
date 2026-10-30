@@ -64,7 +64,7 @@ export default function AboutOrganism({
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
-                  fetchpriority="low"
+                  fetchPriority="low"
                 />
                 <span className="absolute top-3 left-3 bg-[#ffcc00] text-gray-900 text-[11px] font-black px-2.5 py-1 rounded-full uppercase shadow">
                   {unit.badge}

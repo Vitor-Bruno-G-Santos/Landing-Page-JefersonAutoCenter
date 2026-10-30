@@ -18,8 +18,8 @@ export default function Button({
     whatsapp: 'font-bold rounded-xl bg-[#1da851] hover:bg-[#178c43] text-white border-b-4 border-green-900 shadow-md hover:shadow-xl',
     secondary: 'font-bold rounded-xl bg-[#001f5c] hover:bg-[#001744] text-white border border-[#002d80] shadow-md hover:shadow-xl',
     outline: 'font-bold rounded-xl border-2 border-[#ffcc00] text-[#ffcc00] hover:bg-[#ffcc00] hover:text-gray-900 shadow-md hover:shadow-xl',
-    header: 'font-medium rounded-xl bg-transparent hover:bg-white/10 text-white border border-[#8991b7] hover:border-white shadow-none',
-    headerOutline: 'font-medium rounded-xl bg-transparent hover:bg-white/10 text-white border border-[#8991b7] hover:border-white shadow-none'
+    header: 'font-medium rounded-xl bg-transparent hover:bg-[#ffcc00] text-white hover:text-gray-950 border border-[#8991b7] hover:border-[#ffcc00] shadow-none hover:shadow-md',
+    headerOutline: 'font-medium rounded-xl bg-transparent hover:bg-[#ffcc00] text-white hover:text-gray-950 border border-[#8991b7] hover:border-[#ffcc00] shadow-none hover:shadow-md'
   };
 
   const sizes = {

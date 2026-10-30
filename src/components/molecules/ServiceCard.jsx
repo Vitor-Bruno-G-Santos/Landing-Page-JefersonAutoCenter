@@ -43,7 +43,7 @@ export default function ServiceCard({
               height="240"
               loading="lazy"
               decoding="async"
-              fetchpriority="low"
+              fetchPriority="low"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
           ) : (

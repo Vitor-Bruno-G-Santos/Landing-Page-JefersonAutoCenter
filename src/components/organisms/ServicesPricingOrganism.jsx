@@ -14,7 +14,7 @@ export default function ServicesPricingOrganism({
   specialties = []
 }) {
   return (
-    <section id="servicos" className="bg-gradient-to-b from-[#001f5c] to-[#001744] py-16 md:py-20 px-4 section-divider-top">
+    <section id="servicos" className="bg-gradient-to-b from-[#001744] via-[#001f5c] to-[#001744] py-16 md:py-20 px-4 section-divider-top">
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-black text-white">

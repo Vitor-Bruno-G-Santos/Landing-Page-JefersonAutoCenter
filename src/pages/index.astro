@@ -14,6 +14,7 @@ import FinalCTAOrganism from '../components/organisms/FinalCTAOrganism';
 import FooterOrganism from '../components/organisms/FooterOrganism';
 import companyData from '../data/infos.json';
 import FloatingWhatsAppButton from '../components/molecules/FloatingWhatsAppButton';
+import BackgroundAudio from '../components/molecules/BackgroundAudio';
 const { 
   whatsappLink, 
   units, 
@@ -72,13 +73,6 @@ const {
       socialProof={socialProof}
     />
     <MetricsBarOrganism client:visible metrics={metrics} />
-    <HowItWorksOrganism
-      client:visible
-      howItWorks={companyData.howItWorks}
-      units={units}
-      ctaLabel={cta.primary}
-    />
-    <CompanyPhotosOrganism client:visible gallery={gallery} />
     <ServicesPricingOrganism 
       client:visible
       whatsappLink={whatsappLink} 
@@ -89,6 +83,15 @@ const {
       priceDisclaimer={companyData.services.priceDisclaimer}
       specialties={companyData.services.specialties}
     />
+    <HowItWorksOrganism
+      client:visible
+      howItWorks={companyData.howItWorks}
+      units={units}
+      ctaLabel={cta.primary}
+    />
+    
+    <CompanyPhotosOrganism client:visible gallery={gallery} />
+    
     <TestimonialsOrganism 
       testimonials={testimonials} 
       metrics={metrics}
@@ -111,5 +114,8 @@ const {
 
   <!-- BOTÃO FLUTUANTE WHATSAPP / BARRA MOBILE -->
   <FloatingWhatsAppButton client:idle units={units} primaryTel={contact.phonePrimaryTel} /> 
+
+  <!-- MÚSICA DE FUNDO -->
+  <BackgroundAudio client:load />
 </Layout>
 

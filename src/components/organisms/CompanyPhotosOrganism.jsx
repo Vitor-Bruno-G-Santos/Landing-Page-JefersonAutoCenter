@@ -24,7 +24,7 @@ function PhotoTile({ photo, className = '' }) {
         alt="Estrutura Jeferson Autocenter"
         loading="lazy"
         decoding="async"
-        fetchpriority="low"
+        fetchPriority="low"
         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
       />
     </div>
@@ -47,7 +47,7 @@ export default function CompanyPhotosOrganism({
   return (
     <section
       id="fotos"
-      className="bg-gradient-to-b from-[#002d80] via-[#00266e] to-[#001f5c] py-16 md:py-20 px-4 section-divider-top overflow-hidden"
+      className="bg-gradient-to-b from-[#002d80] via-[#001f5c] to-[#001744] py-16 md:py-20 px-4 section-divider-top overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 max-w-3xl mx-auto">
